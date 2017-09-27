@@ -1,0 +1,29 @@
+Programming Question 2:
+
+MyStack implements a stack using  linkedlist.AddFirst which is big-O O(1)
+and removeLast which also big-O O(1)
+
+This may imply that my TwoStackQueue
+enqueue:  linkedlist.addfirst takes O(1) to push an element then enqueue takes O(1)
+So, the big oh of
+
+        for (i = 0; i < testSize; ++i) {
+            test2.enqueue(testLine.charAt(i));
+        }
+   is O(N) from the for-loop
+dequeue: uses push and pop from linkedlist removeFirst and addFirst which have O(1)
+however, the transferS1toS2 moves  elements in a loop then O(N). So, the dequeue big O is (N)
+
+the big Oh of
+        while (!test2.isEmpty()) {
+            System.out.print(test2.dequeue());
+        }
+
+  is O(N^2) one O(N) form the while and other for O(N) dequeue (transferS1toS2)
+
+I used the Big O chart from
+http://www.minich.com/education/wyo/java/lecture_notes/big%20oh%20chart.php
+to come with this conclusion
+
+
+When I write the test cases in Problem2 I realized that dequeue was slower than enqueue.

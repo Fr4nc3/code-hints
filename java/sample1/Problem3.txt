@@ -1,0 +1,77 @@
+methodA N: 1
+172429
+methodA N: 10
+17243
+methodA N: 100
+43518
+methodA N: 1000
+258644
+methodA N: 10000
+1011586
+methodA N: 100000
+539457
+methodA N: 1000000
+74720
+methodA N: 10000000
+60760
+methodA N: 100000000
+48444
+methodA N: 1000000000
+46802
+
+methodB N: 1
+15190
+methodB N: 10
+11906
+methodB N: 100
+68150
+methodB N: 1000
+1701714
+methodB N: 10000
+655642
+methodB N: 100000
+986132
+methodB N: 1000000
+13138
+methodB N: 10000000
+11085
+methodB N: 100000000
+10675
+methodB N: 1000000000
+10674
+
+
+foo N: 1
+13959
+foo N: 10
+11906
+foo N: 100
+9853
+foo N: 1000
+10263
+foo N: 10000
+14779
+foo N: 100000
+10674
+foo N: 1000000
+10264
+foo N: 10000000
+10674
+foo N: 100000000
+11085
+foo N: 1000000000
+12727
+
+The numbers in nanoseconds don't seem to be accurate and my theory (and after some googling)
+it is because JVM optimize the process, also my results may be different for reason such as
+
+1) Laptop setup
+2) Program that I am running parallel to the test (AKA memory available for the test)
+
+I found this online
+http://stackoverflow.com/questions/9724950/java-system-nanotime-elapsed-average-time-keeps-getting-smaller
+
+and I am basing my results in this theory.
+Java's JIT(Just-in-time compilation) optimizes code that gets run extensively -- the more it's run,
+the more effort the JIT puts into optimizing it.
+
