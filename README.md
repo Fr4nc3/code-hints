@@ -3,5 +3,5 @@
 ### Francia Riesco
 
 ```markdown
-I have professional code experience in several programming language 
+Professional software developer and Research Scientist Interested in Data Science and Computational Astrophysics. I have experience programming in several language such as C#, PHP, C, R, PYTHON, Java. Also, database architect  in SQL Server, Oracle, MySQL, PostgreSQL.
 ```
