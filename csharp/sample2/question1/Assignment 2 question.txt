@@ -1,0 +1,18 @@
+Given the POCO entities below, and assuming you have a List<Hit> and a List<User>, representing hits to a website by users, write the ASP.NET controller actions that return a JSON response with:
+Last visited page yesterday for each user
+Top 10 most active users anytime
+ 
+public class Hit
+{
+public Guid Id { get; set; }
+public Guid UserId { get; set; }
+public string Url { get; set; }
+public DateTime Date { get; set; }
+}
+public class User
+{
+public Guid Id { get; set; }
+public string FirstName { get; set; }
+   public string LastName { get; set; }
+ 
+ 

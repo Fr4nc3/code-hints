@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Assignment.Models.ActiveUersViewModel>
+
+<h3>Most Active Top 10 Users</h3>
+
+<table>
+    <tr>
+        <th> ID</th>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Date</th>
+        <th>Url</th>
+    </tr>
+
+    @foreach (var m in @Model)
+    {
+        <tr>
+            <td>@m.Id</td>
+            <td>@m.FirstName</td>
+            <td>@m.LastName</td>
+            <td>@m.Date</td>
+            <td>@m.Url</td>
+        </tr>
+    }
+</table>
+
+@Html.ActionLink("Check Page", "Index", "Check")

@@ -1,0 +1,17 @@
+﻿@model IEnumerable<Assignment.Models.Hit>
+<script src="~/Scripts/Script.js"></script>
+<h3>My Own Application</h3>
+
+<table>
+    <tr>
+        <td>
+            <input type="button" value="ActiveUsers" id="activeUsersButton"
+                   onclick="location.href='@Url.Action("ActiveUers", "Check")'" />
+        </td>
+
+        <td>
+            <input type="button" value="Lastvisitedpage" id="lastvisitedpageButton"
+                   onclick="location.href = '@Url.Action("LastVisitedUsers", "Check")'"/>
+        </td>
+    </tr>
+</table>
