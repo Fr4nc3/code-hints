@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Hansel and Gretel </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name = "format-detection" content = "telephone=no"/>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width;" />
+    <link href="css/jquery.mobile-1.2.0.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+        
+    <link rel="stylesheet" href="css/ipad.css" type="text/css" />	
+    <link rel="stylesheet" href="css/ipad_language.css" type="text/css" />
+    <link rel="stylesheet" href="css/ipad_lori.css" type="text/css" />
+        
+    <script type="text/javascript" charset="utf-8" src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/jquery.ui.touch-punch.min.js"></script>
+        
+        
+	<script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/jquery.mobile-1.2.0.min.js"></script>
+      
+
+      
+    <script type="text/javascript" charset="utf-8" src="js/languages.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/audio.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/animation.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/main.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/main-animation.js"></script>
+    <script type="text/javascript">
+
+	function preventBehavior(e){ 
+      e.preventDefault(); 
+    };
+	document.addEventListener("touchmove", preventBehavior, false);
+
+	function onBodyLoad()
+	{		
+		document.addEventListener("deviceready", onDeviceReady, false);
+	}
+    function onDeviceReady() {
+        document.addEventListener("resume", onResume, false);
+    }
+
+    // Handle the resume event
+    //
+    function onResume() {
+        //#menu_common" data-transition="slideup"
+          $.mobile.changePage($('#menu_principal'),{transition: "slideup"});
+
+    }
+    </script>
+  </head>
+  <body onload="onBodyLoad()">
+      <!---hidden variables storage-->    
+      <div id="comands" class="display_none">
+          <div id="sound" class="display_none">on</div>
+          <div id="lang" class="display_none">spanish</div>
+          <div id="audio_file" class="display_none"></div>
+      </div>
+      
+     <div data-role="page" id="home" class="dimensions">
+          <div id="vid_container"> 
+              <video id="movie" width="768" height="1024"  autoplay="autoplay" preload="auto" controls="false" poster="img/ipad2/common/Default-ipad.png" style="object-fit:fill;">
+                  <source src="video/ipad.m4v" />
+              </video>
+          </div>
+      </div>
+      
+      
+  <!--- <div id="cover" data-role="page" class="dimensions">
+          <div class="objects homemain"></div>
+    
+  </div> --->
+         <!---main page menu-->
+      
+     
+    <div id="menu_principal" data-role="page" class="dimensions common">
+
+         <div class="objects menumain_bird1 btn_mute_principal"></div>
+         <div class="objects menumain_bird2 btn_mute_principal"></div>
+        <div class="objects menumain_bird3 btn_mute_principal"></div>
+         <div class="objects menumain_buble1 btn_mute_principal globo_menu"></div>
+        <div class="objects menumain_buble2 btn_mute_principal globo_menu"></div>
+        <div class="objects menumain_buble3 btn_mute_principal globo_menu"></div>
+         <div class="objects menumain_tree"></div>
+         <div class="objects menumain_house"></div>
+         <div class="objects menumain_title"></div>
+         <a href="#main_page" data-transition="slide"><div class="menumain_start txt"></div></a>
+         <div class="objects menumain_hansel"></div>
+         <div class="objects menumain_gretel"></div>
+        <div class="objects menumain_gretel_candy"></div>
+          <div id="spanish_btn" class="spanish_btn_on txt"></div>
+          <div id="english_btn" class="english_btn_off txt"></div>
+          <div id="french_btn" class="french_btn_off txt"></div>
+          <div id="german_btn" class="german_btn_off txt"></div>
+          <div id="portuguese_btn" class="portuguese_btn_off txt"></div>
+            <div id="info_btn"  class="txt"></div>
+        
+        <div class="pestana">
+            <a href="#thumb_index" data-transition="slidefade" data-direction="reverse"><div class="pestana_imagen"></div></a>
+        </div>
+  </div>
+    <!---index -->   
+  <div id="thumb_index" data-role="page" class="dimensions">
+      <div class="x_close_index txt"><a href="" data-rel="back" data-transition="slide"><div class="x_close_img"></div></a></div>
+      <div id="in_cover" class="txt">
+        <div class="mini_cover"></div>
+        <div class="mini_cover_num"></div>
+      </div>
+      <div id="in_menu" class="txt">
+          <a href="#menu_principal" data-transition="slideup"><div class="mini_menu"></div></a>
+          <a href="#menu_principal" data-transition="slideup"><div class="mini_menu_num"></div></a>
+      </div>
+      <div id="in_pg1" class="txt">
+          <a href="#pg1" data-transition="slideup"><div class="mini_pg1"></div></a>
+          <a href="#pg1" data-transition="slideup"><div class="mini_pg1_num"></div></a>
+      </div>
+      <div id="in_pg2" class="txt">
+          <a href="#pg2" data-transition="slideup"><div class="mini_pg2"></div></a>
+          <a href="#pg2" data-transition="slideup"><div class="mini_pg2_num"></div></a>
+      </div>
+      <div id="in_pg3" class="txt">
+          <a href="#pg3" data-transition="slideup"><div class="mini_pg3"></div></a>
+          <a href="#pg3" data-transition="slideup"><div class="mini_pg3_num"></div></a>
+      </div>
+      
+      <div id="in_pg4" class="txt">
+          <a href="#pg4" data-transition="slideup"><div class="mini_pg4"></div></a>
+          <a href="#pg4" data-transition="slideup"><div class="mini_pg4_num"></div></a>
+      </div>
+      <div id="in_pg5" class="txt">
+          <a href="#pg5" data-transition="slideup"><div class="mini_pg5"></div></a>
+          <a href="#pg5" data-transition="slideup"><div class="mini_pg5_num"></div></a>
+      </div>
+      <div id="in_pg6" class="txt">
+          <a href="#pg6" data-transition="slideup"><div class="mini_pg6"></div></a>
+          <a href="#pg6" data-transition="slideup"><div class="mini_pg6_num"></div></a>
+      </div>
+      <div id="in_pg7" class="txt">
+          <a href="#pg7" data-transition="slideup"><div class="mini_pg7"></div></a>
+          <a href="#pg7" data-transition="slideup"><div class="mini_pg7_num"></div></a>
+      </div>
+      
+      <div id="in_pg8" class="txt">
+          <a href="#pg8" data-transition="slide"><div class="mini_pg8"></div></a>
+          <a href="#pg8" data-transition="slide"><div class="mini_pg8_num"></div></a>
+      </div>
+      <div id="in_pg9" class="txt">
+          <a href="#pg9" data-transition="slideup"><div class="mini_pg9"></div></a>
+          <a href="#pg9" data-transition="slideup"><div class="mini_pg9_num"></div></a>
+      </div>
+      <div id="in_pg10" class="txt">
+          <a href="#pg10" data-transition="slideup"><div class="mini_pg10"></div></a>
+          <a href="#pg10" data-transition="slideup"><div class="mini_pg10_num"></div></a>
+      </div>
+      <div id="in_pg11" class="txt">
+          <a href="#pg11" data-transition="slideup"><div class="mini_pg11"></div></a>
+          <a href="#pg11" data-transition="slideup"><div class="mini_pg11_num"></div></a>
+      </div>
+      <div id="in_pg12" class="txt">
+          <a href="#pg12" data-transition="slideup"><div class="mini_pg12"></div></a>
+          <a href="#pg12" data-transition="slideup"><div class="mini_pg12_num"></div></a>
+      </div>
+      <div id="in_pg13" class="txt">
+          <a href="#pg13" data-transition="slideup"><div class="mini_pg13"></div></a>
+          <a href="#pg13" data-transition="slideup"><div class="mini_pg13_num"></div></a>
+      </div>
+      <div id="in_pg14" class="txt">
+          <a href="#pg14" data-transition="slideup"><div class="mini_pg14"></div></a>
+          <a href="#pg14" data-transition="slideup"><div class="mini_pg14_num"></div></a>
+      </div>
+      <div id="in_pg15" class="txt">
+          <a href="#pg15" data-transition="slideup"><div class="mini_pg15"></div></a>
+          <a href="#pg15" data-transition="slideup"><div class="mini_pg15_num"></div></a>
+      </div>
+      
+      <div id="in_pg16" class="txt">
+          <a href="#pg16" data-transition="slideup"><div class="mini_pg16"></div></a>
+          <a href="#pg16" data-transition="slideup"><div class="mini_pg16_num"></div></a>
+      </div>
+      <div id="in_pg17" class="txt">
+          <a href="#pg17" data-transition="slideup"><div class="mini_pg17"></div></a>
+          <a href="#pg17" data-transition="slideup"><div class="mini_pg17_num"></div></a>
+      </div>
+      <div id="in_pg18" class="txt">
+          <a href="#pg18" data-transition="slideup"><div class="mini_pg18"></div></a>
+          <a href="#pg18" data-transition="slideup"><div class="mini_pg18_num"></div></a>
+      </div>
+      <div id="in_pg19" class="txt">
+          <a href="#pg19" data-transition="slideup"><div class="mini_pg19"></div></a>
+          <a href="#pg19" data-transition="slideup"><div class="mini_pg19_num"></div></a>
+      </div>
+
+      
+      
+      
+
+  </div>
+ <!---main book open-->
+  <div id="main_page" data-role="page" class="dimensions">
+    
+      <div id="main_txt" class="txt main_txt_spanish"></div>
+          <div id="menu_main" class="commands"></div>
+          <div class="menu"><!---menu-->
+              <div class="menu_cnt" data-role="content">
+                  <a href="#menu_principal" data-direction="reverse" data-transition="slide" class="hand_nav_swape"><div class="menu_back"></div></a>
+                   <a href="#menu_common" data-transition="slideup"><div class="menu_head"></div></a>
+                  <a href="#pg1" data-transition="slide" class="hand_nav_swape"><div class="menu_next"></div></a>
+              </div>
+          </div><!---menu-->
+      <div class="pestana">
+          <a href="#thumb_index" data-transition="slidefade" data-direction="reverse"><div class="pestana_imagen"></div></a>
+      </div>
+  </div>
+
+      
+      <!---menu_common -->
+      <div id="menu_common"  data-role="page"  class="dimensions">
+          <div class="x_close_index txt common_x"><a href="" data-rel="back" data-transition="slide"><div class="x_close_img"></div></a></div>
+
+        <div id="menu_body_common" class="txt">
+            <div class="txt hanselgretel_title"></div>
+            
+            
+            <a href="#menu_principal" data-transition="slide"><div id="menumain_txt" class="txt menumain_txt_spanish"></div></a>
+            <a href="#menu_principal" data-transition="slide"><div id="mainmenucommon" class="txt mainmenucommon"></div></a>
+           
+            
+            <div id="startover_common" class="objects startover_common"></div>
+            <div id="startover_txt" class="txt startover_txt_spanish"></div>
+            
+            <div id="common_mute" class="txt common_mute_on"></div>
+            <div id="mutecommon_txt" class="txt mutecommon_txt_spanish"></div>
+            
+            <a href="" data-rel="back" data-transition="slide"><div class="menu_head objects head_common"></div></a>
+            
+          </div>
+         
+          <div class="pestana">
+              <a href="#thumb_index" data-transition="slidefade" data-direction="reverse"><div class="pestana_imagen"></div></a>
+          </div>
+      </div>
+
+<!---credits-->
+  <div id="credits" data-role="page" class="dimensions common">
+      
+      <div class="txt miel_logo"></div>
+      <div id="credits_txt" class="txt credits_txt_spanish"></div>
+      <div class="birds pg2_bird3 ct_bird3 oscillate_pg2_bird3 draggables20"></div>
+      <div class="birds pg2_bird5 ct_bird5 oscillate_pg2_bird3 draggables20"></div>
+      <!--div class="objects pg4_leaf1 ct_leaf1"></div>
+      <div class="objects pg4_leaf2 ct_leaf2"></div>
+      <div class="objects pg4_leaf3 ct_leaf3"></div>
+      <div class="objects pg4_leaf4 ct_leaf4"></div-->
+      <div class="objects pg5_spin ct_spin draggables20"></div>
+      <div class="objects pg5_squirrel ct_squirrel"></div>
+      <div class="objects pg5_squirrel_tail ct_squirrel_tail"></div>
+      <div class="objects pg10_cookie1 drag-cookies ct_cookie1"></div>
+      <div class="objects pg10_cookie2 drag-cookies ct_cookie2"></div>
+      <div class="objects pg10_cookie3 drag-cookies ct_cookie3"></div>
+      <div class="objects pg10_cookie4 drag-cookies ct_cookie4"></div>
+      <div class="objects pg10_cookie5 drag-cookies ct_cookie5"></div>
+      <div class="objects pg10_cookie6 drag-cookies ct_cookie6"></div>
+      <div class="objects pg10_cookie7 drag-cookies ct_cookie7"></div>
+      <div class="objects pg10_cookie8 drag-cookies ct_cookie8"></div> 
+      <div class="objects pg10_cookie9 drag-cookies ct_cookie9"></div>
+      <div class="objects pg10_cookie10 drag-cookies ct_cookie10"></div>
+      <div class="menu"><!---menu-->
+          <div class="menu_cnt" data-role="content">
+              <a href="#pg19" data-direction="reverse" data-transition="slide" class="hand_nav_swape"><div class="menu_back"></div></a>
+             <a href="#menu_common" data-transition="slideup"><div class="menu_head"></div></a>
+              <a href="#next" data-transition="slide" class="hand_nav_swape"><div class="menu_next"></div></a>
+          </div>
+      </div><!---menu-->
+      
+      <div class="pestana">
+          <a href="#thumb_index" data-transition="slidefade" data-direction="reverse"><div class="pestana_imagen"></div></a>
+      </div>
+  </div>
+      <!---next-->
+      <div id="next" data-role="page" class="dimensions common">
+           <div id="next_logo" class="objects"></div>
+          <div id="next_txt" class="txt next_txt_spanish"></div>
+          <div id="prince" class="objects next_prince_eyes_on principe"></div>
+          <div class="menu"><!---menu-->
+              <div class="menu_cnt" data-role="content">
+                  <a href="#credits" data-direction="reverse"  data-transition="slide" class="hand_nav_swape"><div class="menu_back"></div></a>
+                  <a href="#menu_common" data-transition="slideup"><div class="menu_head"></div></a>
+              </div>
+          </div><!---menu-->
+          
+          <div class="pestana">
+              <a href="#thumb_index" data-transition="slidefade" data-direction="reverse"><div class="pestana_imagen"></div></a>
+          </div>
+      </div>
+      
+      
+      
+<!---info-->
+      
+      
+      <div id="info_page" data-role="page" class="dimensions common">
+          
+          <div id="info_txt" class="txt info_txt_spanish"></div>
+          <div class="objects info_logo"></div>
+          <div class="objects pg5_squirrel  info_ardilla"></div>
+          <div class="objects pg5_squirrel_tail info_ardilla_cola"></div>
+          <div class="objects pg5_rat info_rat"></div>
+          <div class="objects pg11_cookieman2 draggable info_cookie2"></div>
+          <div class="objects pg11_cookieman3 draggable info_cookie3"></div>
+          <div class="objects pg11_cookieman4 draggable info_cookie4"></div>
+          
+          
+          
+
+          <a href="http://www.mielproducciones.com/facebook.html" class="ui-link" rel="external" target="_blank" title="Miel Producciones"><div class="objects info_facebook"></div></a>
+          <a href="https://twitter.com/mielapps" class="ui-link" rel="external" target="_blank" title="Miel Producciones"><div class="objects info_twitter"></div></a>
+          <div id="pglink_rank" class="objects info_rank"></div>
+          
+           <a href="" data-rel="back" data-transition="slidedown"><div id="bruja_common_info" class="menu_head"></div></a>
+          
+          <div class="pestana">
+              <a href="#thumb_index" data-transition="slidefade" data-direction="reverse"><div class="pestana_imagen"></div></a>
+          </div>
+      </div>
+<!---pg1-->
+  <div id="pg1" data-role="page" class="dimensions common addSnow">
+   
+      
+      <!--div class="objects snowflake1 pg1_flake1 draggables20"></div>
+      <div class="objects snowflake2 pg1_flake2 draggables20"></div>
+      <div class="objects snowflake3 pg1_flake3 draggables20"></div>
+      <div class="objects snowflake4 pg1_flake4 draggables20"></div>
+      <div class="objects snowflake5 pg1_flake5 draggables20"></div>
+      <div class="objects snowflake6 pg1_flake6 draggables20"></div>
+      <div class="objects snowflake7 pg1_flake7 draggables20"></div>
+      <div class="objects snowflake8 pg1_flake8 draggables20"></div--->
+      <div class="objects snowflake1 pg3_flake1 draggables20"></div>
+      <div class="objects snowflake2 pg3_flake2 draggables20"></div>
+      <div class="objects snowflake3 pg3_flake3 draggables20"></div>
+      <div class="objects snowflake4 pg3_flake4 draggables20"></div>
+      <div class="objects snowflake5 pg3_flake5 draggables20"></div>
+      <div class="objects snowflake6 pg3_flake6 draggables20"></div>
+      <div class="objects snowflake7 pg3_flake7 draggables20"></div>
+      <div class="objects snowflake8 pg3_flake8 draggables20"></div>
+      
+      <div class="objects snowflake1 pg3_flake9 draggables20"></div>
+      <div class="objects snowflake2 pg3_flake10 draggables20"></div>
+      <div class="objects snowflake3 pg3_flake11 draggables20"></div>
+      <div class="objects snowflake4 pg3_flake12 draggables20"></div>
+      <div class="objects snowflake5 pg3_flake13 draggables20"></div>
+      <div class="objects snowflake6 pg3_flake14 draggables20"></div>
+      <div class="objects snowflake7 pg3_flake15 draggables20"></div>
+      <div class="objects snowflake8 pg3_flake16 draggables20"></div>
+      
+      <div id="pg1_txt" class="txt pg1_txt_spanish"></div>
+      <div class="menu"><!---menu-->
+          <div class="menu_cnt" data-role="content">
+              <a href="#main_page" data-direction="reverse"  data-transition="slide" class="hand_nav_swape"><div class="menu_back"></div></a>
+             <a href="#menu_common" data-transition="slideup"><div class="menu_head"></div></a>
+              <a href="#pg2" data-transition="slide" class="hand_nav_swape"><div class="menu_next"  ></div></a>
+          </div>
+      </div><!---menu-->
+      <div class="pestana">
+          <a href="#thumb_index" data-transition="slidefade" data-direction="reverse"><div class="pestana_imagen"></div></a>
+      </div>
+  </div>
+    <div id="pg2" data-role="page"  class="dimensions addSnow">
+
+    
+      <div class="birds pg2_bird1 oscillate_pg2_bird1 draggables20"></div>
+      <div class="birds pg2_bird2 oscillate_pg2_bird2 draggables20"></div>
+      <div class="birds pg2_bird3 oscillate_pg2_bird3 draggables20"></div>
+      <div class="birds pg2_bird4 oscillate_pg2_bird4 draggables20"></div>
+      <div class="birds pg2_bird5 oscillate_pg2_bird5 draggables20"></div>
+      <div class="birds pg2_bird6 oscillate_pg2_bird6 draggables20"></div>
+      <div class="birds pg2_bird7 oscillate_pg2_bird7 draggables20"></div>
+      <div class="birds pg2_bird8 oscillate_pg2_bird8 draggables20"></div>
+
+      
+      <div class="menu"><!---menu-->
+          <div class="menu_cnt" data-role="content">
+              <a href="#pg1" data-direction="reverse"  data-transition="slide" class="hand_nav_swape"><div class="menu_back"></div></a>
+             <a href="#menu_common" data-transition="slideup"><div class="menu_head"></div></a>
+              <a href="#pg3" data-transition="slide" class="hand_nav_swape"><div class="menu_next"></div></a>
+          </div>
+      </div><!---menu-->
+        <div class="pestana">
+            <a href="#thumb_index" data-transition="slidefade" data-direction="reverse"><div class="pestana_imagen"></div></a>
+        </div>
+  </div>
+      
+      
+      
+  <div id="pg3" data-role="page" class="dimensions common">
+      <div class="objects snowflake1 pg3_flake1 draggables20"></div>
+      <div class="objects snowflake2 pg3_flake2 draggables20"></div>
+      <div class="objects snowflake3 pg3_flake3 draggables20"></div>
+      <div class="objects snowflake4 pg3_flake4 draggables20"></div>
+      <div class="objects snowflake5 pg3_flake5 draggables20"></div>
+      <div class="objects snowflake6 pg3_flake6 draggables20"></div>
+      <div class="objects snowflake7 pg3_flake7 draggables20"></div>
+      <div class="objects snowflake8 pg3_flake8 draggables20"></div>
+  
+      <div class="objects snowflake1 pg3_flake9 draggables20"></div>
+      <div class="objects snowflake2 pg3_flake10 draggables20"></div>
+      <div class="objects snowflake3 pg3_flake11 draggables20"></div>
+      <div class="objects snowflake4 pg3_flake12 draggables20"></div>
+      <div class="objects snowflake5 pg3_flake13 draggables20"></div>
+      <div class="objects snowflake6 pg3_flake14 draggables20"></div>
+      <div class="objects snowflake7 pg3_flake15 draggables20"></div>
+      <div class="objects snowflake8 pg3_flake16 draggables20"></div>
+      
+      
+      <div id="pg3_txt" class="txt pg3_txt_spanish"></div>
+      <div class="objects pg3_branch"></div>
+      <div class="birds pg3_bird"></div>
+      
+      
+      <div class="menu"><!---menu-->
+          <div class="menu_cnt" data-role="content">
+              <a href="#pg2" data-direction="reverse"  data-transition="slide" class="hand_nav_swape"><div class="menu_back"></div></a>
+             <a href="#menu_common" data-transition="slideup"><div class="menu_head"></div></a>
+              <a href="#pg4" data-transition="slide" class="hand_nav_swape"><div class="menu_next"></div></a>
+          </div>
+      </div><!---menu-->
+      <div class="pestana">
+          <a href="#thumb_index" data-transition="slidefade" data-direction="reverse"><div class="pestana_imagen"></div></a>
+      </div>
+  </div>
+  <div id="pg4" data-role="page"  class="dimensions">
+       
+      <div class="objects pg4_branch"></div>
+
+      <div class="objects pg4_hansel"></div>
+      <div class="objects pg4_hansel_head headdown"></div>
+      <div class="objects pg4_crow oscillate_crow draggables20">
+        <div class="birds pg4_bird1 oscillate_pg2_bird1 "></div>
+        <div class="birds pg4_bird2 oscillate_pg2_bird2"></div>
+        <div class="birds pg4_bird3 oscillate_pg2_bird3"></div>
+        <div class="objects pg4_crow_eyes_open blink"></div>
+      </div>
+
+      <div class="objects pg4_leaf1 draggables20"></div>
+      <div class="objects pg4_leaf2 draggables20"></div>
+      <div class="objects pg4_leaf3 draggables20"></div>
+      <div class="objects pg4_leaf4 draggables20"></div>
+      <div class="objects pg4_rock1 draggables20"></div>
+      <div class="objects pg4_rock2 draggables20"></div>
+      
+      <div class="over menu"><!---menu-->
+          <div class="over menu_cnt" data-role="content">
+              <a href="#pg3" data-direction="reverse"  data-transition="slide" class="hand_nav_swape"><div class="over menu_back"></div></a>
+              <a href="#menu_common"><div class="over menu_head"></div></a>
+              <a href="#pg5" data-transition="slide" class="hand_nav_swape"><div class="over menu_next"  ></div></a>
+          </div>
+      </div><!---menu-->
+      <div class="pestana">
+          <a href="#thumb_index" data-transition="slidefade" data-direction="reverse"><div class="pestana_imagen"></div></a>
+      </div>
+  </div>
+  <div id="pg5" data-role="page"  class="dimensions common">
+      
+      <div id="pg5_txt" class="txt pg5_txt_spanish"></div>
+      
+      <!---<div class="objects pg5_owl"></div>-->
+      <div class="objects pg5_dear_body"></div>
+      <div class="objects pg5_dear_head"></div>
+      <div class="objects pg5_wood"></div>
+      <div class="objects pg5_spin"></div>
+      <div class="objects pg5_squirrel"></div>
+      <div class="objects pg5_squirrel_tail"></div>
+      <div class="objects pg5_rat"></div>
+      <!--div class="objects pg5_owl"></div --->
+      
+      
+      <div class="menu"><!---menu-->
+          <div class="menu_cnt" data-role="content">
+              <a href="#pg4" data-direction="reverse"  data-transition="slide" class="hand_nav_swape"><div class="menu_back"></div></a>
+             <a href="#menu_common" data-transition="slideup"><div class="menu_head"></div></a>
+              <a href="#pg6" data-transition="slide" class="hand_nav_swape"><div class="menu_next"  ></div></a>
+          </div>
+      </div><!---menu-->
+      <div class="pestana">
+          <a href="#thumb_index" data-transition="slidefade" data-direction="reverse"><div class="pestana_imagen"></div></a>
+      </div>
+  </div>
+  <div id="pg6" data-role="page"  class="dimensions common">
+   
+      <div id="pg6_txt" class="txt pg6_txt_spanish"></div>
+      <div class="objects pg6_dad_body"></div>
+      <div class="objects pg6_dad_left_hand"></div>
+      <div class="objects pg6_dad_right_hand"></div>
+      <div class="objects pg6_gretel_body"></div>
+      <div class="objects pg6_gretel_hand"></div>
+      <div class="objects pg6_hansel_body"></div>
+      
+      
+      <div class="menu"><!---menu-->
+          <div class="menu_cnt" data-role="content">
+              <a href="#pg5" data-direction="reverse" data-transition="slide" class="hand_nav_swape"><div class="menu_back"></div></a>
+             <a href="#menu_common" data-transition="slideup"><div class="menu_head"></div></a>
+              <a href="#pg7" data-transition="slide" class="hand_nav_swape"><div class="menu_next"  ></div></a>
+          </div>
+      </div><!---menu-->
+      <div class="pestana">
+          <a href="#thumb_index" data-transition="slidefade" data-direction="reverse"><div class="pestana_imagen"></div></a>
+      </div>
+  </div>
+  <div id="pg7" data-role="page"  class="dimensions common">
+
+      
+      <div id="pg7_txt" class="txt pg7_txt_spanish"></div>
+      <div class="objects pg7_leaf  draggables20"></div>
+      <div class="objects pg7_leaf2 draggables20"></div>
+      <div class="objects pg7_leaf3 draggables20"></div>
+      <!-- div class="objects pg7_leaf4"></div --->
+      <div class="objects pg7_leaf5 draggables20"></div>
+      <div class="objects pg7_leaf6 draggables20"></div>
+      <div class="objects pg7_leaf7 draggables20"></div>
+
+      
+      
+      
+      <div class="menu"><!---menu-->
+          <div class="menu_cnt" data-role="content">
+              <a href="#pg6" data-direction="reverse"  data-transition="slide" class="hand_nav_swape"><div class="menu_back"></div></a>
+             <a href="#menu_common" data-transition="slideup"><div class="menu_head"></div></a>
+              <a href="#pg8" data-transition="slide" class="hand_nav_swape"><div class="menu_next"  ></div></a>
+          </div>
+      </div><!---menu-->
+      <div class="pestana">
+          <a href="#thumb_index" data-transition="slidefade" data-direction="reverse"><div class="pestana_imagen"></div></a>
+      </div>
+      
+  </div>
+  <div id="pg8" data-role="page"  class="dimensions">
+
+      <div id="pg8_txt" class="txt pg8_txt_spanish"></div>
+      <div class="birds pg8_bird1 draggables20"></div>
+      <div class="birds pg8_bird2 draggables20"></div>
+      <div class="birds pg8_bird3 draggables20"></div> 
+      <div class="birds pg8_bird4 draggables20"></div> 
+      <div class="objects pg8_hansel draggables20"></div>
+      <div class="objects pg8_gretel draggables20"></div>
+      <div class="objects pg8_bigtree"></div>
+      
+      
+      <div class="over menu"><!---menu-->
+          <div class="over menu_cnt" data-role="content">
+              <a href="#pg7" data-direction="reverse"  data-transition="slide" class="hand_nav_swape"><div class="over menu_back"></div></a>
+              <a href="#menu_common" data-transition="slideup"><div class="menu_head"></div></a>
+              <a href="#pg9" data-transition="slide" class="hand_nav_swape"><div class="over menu_next"   ></div></a>
+          </div>
+      </div><!---menu-->
+      <div class="pestana">
+          <a href="#thumb_index" data-transition="slidefade" data-direction="reverse"><div class="pestana_imagen"></div></a>
+      </div>
+  </div>
+  <div id="pg9" data-role="page"  class="dimensions common">
+           
+      <div id="pg9_txt" class="txt pg9_txt_spanish"></div>
+      
+      <div class="birds pg9_bird draggables20"></div>
+      <div class="objects pg9_rock1 draggables20"></div>
+      <div class="objects pg9_rock2 draggables20"></div>
+      <div class="objects pg9_rock3 draggables20"></div>
+      
+      <div class="over menu"><!---menu-->
+          <div class="over menu_cnt" data-role="content">
+              <a href="#pg8" data-direction="reverse"  data-transition="slide" class="hand_nav_swape"><div class="over menu_back"></div></a>
+              <a href="#menu_common" data-transition="slideup"><div class="menu_head"></div></a>
+              <a href="#pg10" data-transition="slide" class="hand_nav_swape"><div class="over menu_next"   ></div></a>
+          </div>
+      </div><!---menu-->
+      <div class="pestana">
+          <a href="#thumb_index" data-transition="slidefade" data-direction="reverse"><div class="pestana_imagen"></div></a>
+      </div>
+  </div>
+  <div id="pg10" data-role="page"  class="dimensions">
+      
+      <div class="objects pg10_gretel_hold" >
+      <div class="objects pg10_gretelarm"></div>
+      <div class="objects pg10_gretelarm_candy"></div>
+        </div>
+      <div class="objects pg10_windowshadow"></div>
+      <div class="objects pg10_cookie1 drag-cookies"></div>
+      <div class="objects pg10_cookie2 drag-cookies"></div>
+      <div class="objects pg10_cookie3 drag-cookies"></div>
+      <div class="objects pg10_cookie4 drag-cookies"></div>
+      <div class="objects pg10_cookie5 drag-cookies"></div>
+      <div class="objects pg10_cookie6 drag-cookies"></div>
+      <div class="objects pg10_cookie7 drag-cookies"></div>
+      <div class="objects pg10_cookie8 drag-cookies"></div> 
+      <div class="objects pg10_cookie9 drag-cookies"></div>
+      <div class="objects pg10_cookie10 drag-cookies"></div>
+      <div class="objects pg10_cookie11 drag-cookies"></div>
+      <div class="objects pg10_cookie12 drag-cookies"></div>
+      <div class="menu"><!---menu-->
+          <div class="menu_cnt" data-role="content">
+              <a href="#pg9" data-direction="reverse" data-transition="slide" class="hand_nav_swape"><div class="menu_back"></div></a>
+             <a href="#menu_common" data-transition="slideup"><div class="menu_head"></div></a>
+              <a href="#pg11" data-transition="slide" class="hand_nav_swape"><div class="menu_next"  ></div></a>
+          </div>
+      </div><!---menu-->
+      <div class="pestana">
+          <a href="#thumb_index" data-transition="slidefade" data-direction="reverse"><div class="pestana_imagen"></div></a>
+      </div>
+  </div>
+  <div id="pg11" data-role="page"  class="dimensions common">
+      
+      <div id="pg11_txt" class="txt pg11_txt_spanish"></div>
+      <div class="objects pg11_humo"></div>
+      <div class="objects pg11_mantel"></div>
+      <div class="objects pg11_cakecup"></div>
+      <div class="objects draggable pg11_cookieman1"></div>
+      <div class="objects draggable pg11_cookieman2"></div>
+      <div class="objects draggable pg11_cookieman3"></div>
+      <div class="objects draggable pg11_cookieman4"></div>
+      
+      <div class="menu"><!---menu-->
+          <div class="menu_cnt" data-role="content">
+              <a href="#pg10" data-direction="reverse"  data-transition="slide" class="hand_nav_swape"><div class="menu_back"></div></a>
+             <a href="#menu_common" data-transition="slideup"><div class="menu_head"></div></a>
+              <a href="#pg12" data-transition="slide" class="hand_nav_swape"><div class="menu_next"  ></div></a>
+          </div>
+      </div><!---menu-->
+      <div class="pestana">
+          <a href="#thumb_index" data-transition="slidefade" data-direction="reverse"><div class="pestana_imagen"></div></a>
+      </div>
+  </div>
+ <div id="pg12" data-role="page"  class="dimensions common">
+     
+     <div id="pg12_txt" class="txt pg12_txt_spanish"></div>
+     <div class="objects pg12_pan"></div>
+     <div class="objects pg12_woodfire"></div>
+     <div class="objects pg12_cadena"></div>
+     <div class="objects pg12_witchhead"></div>
+     <div class="objects pg12_witchneck"></div>
+     <div class="objects pg12_witch"></div>
+     <div class="objects pg12_gretel"></div>
+     <div class="objects pg12_cuchara"></div>
+     <div class="objects pg12_fire1"></div>
+     <div class="objects pg12_fire2"></div>
+     <div class="objects pg12_fire3"></div>
+     <div class="objects pg12_fire4"></div>   
+     <div class="objects pg12_fire5"></div>
+     <div class="objects pg12_fire6"></div>
+     <div class="objects pg12_fire7"></div>
+     <div class="objects pg12_fire8"></div>
+     <div class="objects pg12_fire9"></div>
+     <div class="objects pg12_fire10"></div>
+     <div class="menu"><!---menu-->
+         <div class="menu_cnt" data-role="content">
+             <a href="#pg11" data-direction="reverse"  data-transition="slide" class="hand_nav_swape"><div class="menu_back"></div></a>
+            <a href="#menu_common" data-transition="slideup"><div class="menu_head"></div></a>
+             <a href="#pg13" data-transition="slide" class="hand_nav_swape"><div class="menu_next"  ></div></a>
+         </div>
+     </div><!---menu-->
+     <div class="pestana">
+         <a href="#thumb_index" data-transition="slidefade" data-direction="reverse"><div class="pestana_imagen"></div></a>
+     </div>
+ </div>
+  <div id="pg13" data-role="page"  class="dimensions common">
+      
+      <div id="pg13_txt" class="txt pg13_txt_spanish"></div>
+      
+      <div class="txt pg13_tablet"></div>
+      <div class="objects pg13_herbs"></div>
+      <div class="objects pg13_apple draggable"></div>
+      <div class="objects pg13_knife1 pg13_knifes"></div>
+      <div class="objects pg13_knife2 pg13_knifes"></div>
+      <div class="objects pg13_knife3 pg13_knifes"></div>
+      <div class="objects pg13_knife4 pg13_knifes"></div>
+      
+      <div class="menu"><!---menu-->
+          <div class="menu_cnt" data-role="content">
+              <a href="#pg12" data-direction="reverse"  data-transition="slide" class="hand_nav_swape"><div class="menu_back"></div></a>
+             <a href="#menu_common" data-transition="slideup"><div class="menu_head"></div></a>
+              <a href="#pg14" data-transition="slide" class="hand_nav_swape"><div class="menu_next"  ></div></a>
+          </div>
+      </div><!---menu-->
+      <div class="pestana">
+          <a href="#thumb_index" data-transition="slidefade" data-direction="reverse"><div class="pestana_imagen"></div></a>
+      </div>
+  </div>
+  <div id="pg14" data-role="page"  class="dimensions">
+      
+      <div class="objects pg14_hansel"></div>
+      <div class="objects pg14_hanselarm pg14_hanselarm_osc"></div>
+      <div class="objects pg14_witch pg14_witch_osc"></div>
+
+      <div class="menu"><!---menu-->
+          <div class="menu_cnt" data-role="content">
+              <a href="#pg13" data-direction="reverse"  data-transition="slide" class="hand_nav_swape"><div class="menu_back"></div></a>
+             <a href="#menu_common" data-transition="slideup"><div class="menu_head"></div></a>
+              <a href="#pg15" data-transition="slide" class="hand_nav_swape"><div class="menu_next"  ></div></a>
+          </div>
+      </div><!---menu-->
+      <div class="pestana">
+          <a href="#thumb_index" data-transition="slidefade" data-direction="reverse"><div class="pestana_imagen"></div></a>
+      </div>
+  </div>
+  <div id="pg15" data-role="page"  class="dimensions common">
+    
+      <div id="pg15_txt" class="txt pg15_txt_spanish"></div>
+      <div class="objects pg15_shelf"></div>
+      <div class="objects pg15_spoon1 draggables20"></div>
+      <div class="objects pg15_spoon2 draggables20"></div> 
+      <div class="objects pg15_spoon3 draggables20"></div>
+      <div class="objects pg15_spoon4 draggables20"></div>
+      <div class="objects pg15_spoon5 draggables20"></div>
+      <div class="objects pg15_spoon6 draggables20"></div>
+      <div class="objects pg15_spoon7 draggables20"></div>
+      <div class="objects pg15_spoon8 draggables20"></div>
+      <div class="menu"><!---menu-->
+          <div class="menu_cnt" data-role="content">
+              <a href="#pg14" data-direction="reverse"  data-transition="slide" class="hand_nav_swape"><div class="menu_back"></div></a>
+             <a href="#menu_common" data-transition="slideup"><div class="menu_head"></div></a>
+              <a href="#pg16" data-transition="slide" class="hand_nav_swape"><div class="menu_next"  ></div></a>
+          </div>
+      </div><!---menu-->
+      <div class="pestana">
+          <a href="#thumb_index" data-transition="slidefade" data-direction="reverse"><div class="pestana_imagen"></div></a>
+      </div>
+  </div>
+ <div id="pg16" data-role="page"  class="dimensions common">
+     
+     <div id="pg16_txt" class="txt pg16_txt_spanish"></div>
+     <div class="objects pg16_leftleg legs"></div>
+     <div class="objects pg16_rightleg legs"></div>
+     <div class="objects pg16_pan"></div>
+     <div class="objects pg16_fire1 pg16_fire_osc_2"></div>
+     <div class="objects pg16_fire2 pg16_fire_osc_2"></div>
+     <div class="objects pg16_fire3 pg16_fire_osc_1"></div>
+     <div class="objects pg16_fire4 pg16_fire_osc_1"></div>
+     <div class="objects pg16_fire5 pg16_fire_osc_2"></div>
+     <div class="objects pg16_fire6 pg16_fire_osc_2"></div>
+     <div class="objects pg16_fire7 pg16_fire_osc_1"></div>
+
+     
+     <div class="menu"><!---menu-->
+         <div class="menu_cnt" data-role="content">
+             <a href="#pg15" data-direction="reverse"  data-transition="slide" class="hand_nav_swape"><div class="menu_back"></div></a>
+            <a href="#menu_common" data-transition="slideup"><div class="menu_head"></div></a>
+             <a href="#pg17" data-transition="slide" class="hand_nav_swape"><div class="menu_next"  ></div></a>
+         </div>
+     </div><!---menu-->
+     <div class="pestana">
+         <a href="#thumb_index" data-transition="slidefade" data-direction="reverse"><div class="pestana_imagen"></div></a>
+     </div>
+ </div>
+      
+ <div id="pg17" data-role="page"  class="dimensions common">
+       
+     <div id="pg17_txt" class="txt pg17_txt_spanish"></div>
+     
+     <div class="menu"><!---menu-->
+         <div class="menu_cnt" data-role="content">
+             <a href="#pg16" data-direction="reverse"  data-transition="slide" class="hand_nav_swape"><div class="menu_back"></div></a>
+            <a href="#menu_common" data-transition="slideup"><div class="menu_head"></div></a>
+             <a href="#pg18" data-transition="slide" class="hand_nav_swape"><div class="menu_next"  ></div></a>
+         </div>
+     </div><!---menu-->
+     <div class="pestana">
+         <a href="#thumb_index" data-transition="slidefade" data-direction="reverse"><div class="pestana_imagen"></div></a>
+     </div>
+ </div>
+ <div id="pg18" data-role="page"  class="dimensions common">
+     
+     <div id="pg18_txt" class="txt pg18_txt_spanish"></div>
+    <div class="objects pg18_treasure"></div>
+     <div class="objects goldencoin pg18_goldencoin1 draggables20"></div>
+     <div class="objects goldencoin pg18_goldencoin2 draggables20"></div>
+     <div class="objects goldencoin pg18_goldencoin3 draggables20"></div>
+     <div class="objects goldencoin pg18_goldencoin4 draggables20"></div>
+     <div class="objects goldencoin pg18_goldencoin5 draggables20"></div>
+     <div class="objects goldencoin pg18_goldencoin6 draggables20"></div>
+     <div class="objects goldencoin pg18_goldencoin7 draggables20"></div>
+     <div class="objects goldencoin pg18_goldencoin8 draggables20"></div>
+     <div class="objects pg18_light1"></div>
+     <div class="objects pg18_light2"></div>
+     <div class="menu"><!---menu-->
+         <div class="menu_cnt" data-role="content">
+             <a href="#pg17" data-direction="reverse"  data-transition="slide" class="hand_nav_swape"><div class="menu_back"></div></a>
+            <a href="#menu_common" data-transition="slideup"><div class="menu_head"></div></a>
+             <a href="#pg19" data-transition="slide" class="hand_nav_swape"><div class="menu_next"  ></div></a>
+         </div>
+     </div><!---menu-->
+     <div class="pestana">
+         <a href="#thumb_index" data-transition="slidefade" data-direction="reverse"><div class="pestana_imagen"></div></a>
+     </div>
+ </div>
+  <div id="pg19" data-role="page"  class="dimensions">
+      
+      <div class="birds pg19_bird1 draggables20"></div>
+      <div class="birds pg19_bird2 draggables20"></div>
+      <div class="birds pg19_bird3"></div>
+      <div class="objects pg19_arm1"></div>
+      <div class="objects pg19_arm2"></div>
+      <div class="objects pg19_arm3"></div>
+      <div class="objects pg19_arm4"></div>
+      <div class="objects pg19_arm5"></div>
+      
+      <div class="menu"><!---menu-->
+          <div class="menu_cnt" data-role="content">
+              <a href="#pg18" data-direction="reverse"  data-transition="slide" class="hand_nav_swape"><div class="menu_back"></div></a>
+             <a href="#menu_common" data-transition="slideup"><div class="menu_head"></div></a>
+              <a href="#credits"  data-transition="slide" class="hand_nav_swape"><div class="menu_next"></div></a>
+          </div>
+      </div><!---menu-->
+      <div class="pestana">
+          <a href="#thumb_index" data-transition="slidefade" data-direction="reverse"><div class="pestana_imagen"></div></a>
+      </div>
+  </div>
+  </body>
+</html>

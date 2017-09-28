@@ -1,0 +1,1363 @@
+#cover{
+	background-image: url("../img/ipad2/cover/cover.jpg");
+}
+.homemain{
+   background-image: url("../img/ipad2/cover/hanselandgretel.png");
+    height: 535px;
+    left: 116px;
+    top: 190px;
+    width: 545px;
+
+}#main_page{
+    background-image: url("../img/ipad2/common/page_main_menu.jpg");
+
+}
+.txt,.birds,.objects{
+    position:absolute;
+    overflow:hidden;
+}
+.over{
+z-index:100;
+}
+#main_txt{
+
+}
+/* page two birds */
+.pg2_bird1{
+    background-image: url("../img/ipad2/page2/bird1.png");
+    width:253px;
+    height:139px;
+    left: 50px;
+    top: 552px;
+}
+.pg2_bird2{
+    background-image: url("../img/ipad2/page2/bird2.png");
+    width:252px;
+    height:111px;
+    left: 0;
+    top: 265px;
+    
+}
+.pg2_bird3{
+    background-image: url("../img/ipad2/page2/bird3.png");
+    width:236px;
+    height:109px;
+    ßleft: 50px;
+    top: 10px;
+    
+}
+.pg2_bird4{
+    background-image: url("../img/ipad2/page2/bird4.png");
+    width:218px;
+    height:131px;
+    left: 250px;
+    top: 60px;
+    
+}
+.pg2_bird5{
+    background-image: url("../img/ipad2/page2/bird5.png");
+    width:213px;
+    height:127px;
+    left: 480px;
+    top: 100px;
+    
+}
+.pg2_bird6{
+    background-image: url("../img/ipad2/page2/bird6.png");
+    width:229px;
+    height:106px;
+    left: 480px;
+    top: 238px;
+    
+}
+.pg2_bird7{
+    background-image: url("../img/ipad2/page2/bird7.png");
+    width:140px;
+    height:226px;
+    left: 330px;
+    top: 310px;
+    
+}
+.pg2_bird8{
+    background-image: url("../img/ipad2/page2/bird8.png");
+    width:173px;
+    height:160px;
+    left: 400px;
+    top: 352px;
+    
+}
+.pg3_branch{
+    background-image: url("../img/ipad2/page3/branch.png");
+    width:589px;
+    height:169px;
+    left: 179px;
+    top: 630px;
+    
+}
+.pg3_bird{
+    background-image: url("../img/ipad2/page3/birdp3.png");
+    height: 124px;
+    left: 762px;
+    top: 592px;
+    width: 185px;
+    
+}
+.pg4_bird1{
+    background-image: url("../img/ipad2/page4/bird_pg4_1.png");
+    width:70px;
+    height:52px;
+    left: 252px;
+    top: 109px;
+    z-index: 1;
+    
+}
+.pg4_bird2{
+    background-image: url("../img/ipad2/page4/bird_pg4_2.png");
+    height: 51px;
+    left: 120px;
+    top: 20px;
+    width: 58px;
+    z-index: 1;
+    
+}
+.pg4_bird3{
+    background-image: url("../img/ipad2/page4/bird_pg4_3.png");
+    height: 49px;
+    left: 7px;
+    top: 0px;
+    width: 58px;
+    z-index: 1;
+    
+}
+.pg4_leaf1{
+    background-image: url("../img/ipad2/page4/pg4_leaf1.png");
+    width:51px;
+    height:48px;
+    left: 158px;
+    top: 5px;
+    z-index: 11;
+    
+}
+.pg4_leaf2{
+    background-image: url("../img/ipad2/page4/pg4_leaf2.png");
+    width:34px;
+    height:66px;
+    left: 155px;
+    top: 71px;
+    z-index: 11;
+    
+}
+.pg4_leaf3{
+    background-image: url("../img/ipad2/page4/pg4_leaf3.png");
+    width:46px;
+    height:42px;
+    left: 242px;
+    top: 28px;
+    z-index: 11;
+    
+}
+.pg4_leaf4{
+    background-image: url("../img/ipad2/page4/pg4_leaf4.png");
+    width:30px;
+    height:56px;
+    left: 226px;
+    top: 80px;
+    z-index: 11;
+    
+}
+.pg4_hansel{
+    background-image: url("../img/ipad2/page4/hansel_body.png");
+    width:454px;
+    height:391px;
+    left: 150px;
+    top: 500px;
+    z-index: 10;
+}
+.pg4_hansel_head{
+    background-image: url("../img/ipad2/page4/hansel_head.png");
+    height: 137px;
+    left: 439px;
+    top: 460px;
+    width: 193px;
+    
+}
+.pg4_crow{
+    background-image: url("../img/ipad2/page4/crow.png");
+    width:320px;
+    height:464px;
+    left: 150px;
+    top: 134px;
+    z-index:100;
+}
+.pg4_crow_eyes_open{
+    background-image: url("../img/ipad2/page4/crow_open_eyes.png");
+    height: 14px;
+    left: 135px;
+    top: 90px;
+    width: 26px;
+    z-index: 1;
+}
+.pg4_rock1{
+    background-image: url("../img/ipad2/page4/rock1.png");
+   height: 18px;
+    left: 597px;
+    top: 828px;
+    width: 20px;
+    z-index: 10;
+}
+.pg4_rock2{
+    background-image: url("../img/ipad2/page4/rock2.png");
+    height: 19px;
+    left: 580px;
+    top: 832px;
+    width: 21px;
+    z-index: 100;
+}
+.pg5_wood{
+    background-image: url("../img/ipad2/page5/wood.png");
+    width:391px;
+    height:211px;
+    left: 180px;
+    top: 532px;
+
+}
+.pg5_rat{
+    background-image: url("../img/ipad2/page5/rat.png");
+    width:113px;
+    height:151px;
+    left: 402px;
+    top: 453px;
+
+}
+.pg5_dear_body{
+    background-image: url("../img/ipad2/page5/dear_body.png");
+    width:213px;
+    height:192px;
+    left: 100px;
+    top: 576px;
+    z-index: 1;
+
+}
+.pg5_dear_head{
+    background-image: url("../img/ipad2/page5/dear_head.png");
+    width:190px;
+    height:194px;
+    left: 184px;
+    top: 407px;
+    z-index: 2;
+
+}
+.pg5_owl{
+    background-image: url("../img/ipad2/page5/owl.png");
+    width:101px;
+    height:123px;
+        left: 280px;
+    top: 732px;
+
+}
+.pg5_spin{
+    background-image: url("../img/ipad2/page5/spin.png");
+    width:97px;
+    height:64px;
+    left: 800px;
+    top: 684px;
+
+}
+.pg5_squirrel{
+    background-image: url("../img/ipad2/page5/squirrel_body.png");
+   height: 145px;
+    left: 376px;
+    top: 681px;
+    width: 86px;
+}
+.pg5_squirrel_tail{
+    background-image: url("../img/ipad2/page5/squirrel_tale.png");
+    height: 122px;
+   left: 333px;
+    top: 657px;
+    width: 73px;
+}
+.pg5_owl{
+    background-image: url("../img/ipad2/page5/owl.png");
+    height: 123px;
+    left: 297px;
+    top: 448px;
+    width: 101px;
+}
+.pg6_dad_body{
+    background-image: url("../img/ipad2/page6/dad_body.png");
+    width:257px;
+    height:573px;
+    left: 237px;
+    top: 0;
+}
+.pg6_dad_left_hand{
+    background-image: url("../img/ipad2/page6/dad_left_hand.png");
+    width:197px;
+    height:301px;
+    left: 213px;
+    top: 167px;
+    z-index:10;
+}
+.pg6_dad_right_hand{
+    background-image: url("../img/ipad2/page6/dad_right_hand.png");
+    width:141px;
+    height:172px;
+    left: 430px;
+    top: 257px;
+    z-index:10;
+}
+.pg6_gretel_body{
+    background-image: url("../img/ipad2/page6/gretel_body.png");
+    width:183px;
+    height:323px;
+    left: 318px;
+    top: 274px;
+    z-index:1;
+}
+.pg6_gretel_hand{
+    background-image: url("../img/ipad2/page6/gretel_hand.png");
+    width:158px;
+    height:101px;
+    left: 257px;
+    top: 398px;
+    z-index:1;
+}
+.pg6_hansel_body{
+    background-image: url("../img/ipad2/page6/hansel_body.png");
+    width:239px;
+    height:414px;
+    left: 336px;
+    top: 152px;
+}
+
+.pg8_hansel{
+    background-image: url("../img/ipad2/page8/hansel_pg8.png");
+   height: 565px;
+    left: 304px;
+    top: 364px;
+    width: 349px;
+    z-index: 1;
+}
+.pg8_gretel{
+    background-image: url("../img/ipad2/page8/gretel_pg8.png");
+    height: 536px;
+    left: 9px;
+    top: 406px;
+    width: 261px;
+    z-index: 1;
+}
+.pg8_bird1{
+    background-image: url("../img/ipad2/page8/bird1_pg8.png");
+    width:91px;
+    height:63px;
+    left: 284px;
+    top: 594px;
+}
+.pg8_bird2{
+    background-image: url("../img/ipad2/page8/bird2_pg8.png");
+    width:92px;
+    height:43px;
+    left: 280px;
+    top: 517px;
+}
+.pg8_bird3{
+    background-image: url("../img/ipad2/page8/bird3_pg8.png");
+    width:97px;
+    height:59px;
+    left: 403px;
+    top: 552px;
+}
+.pg8_bird4{
+    background-image: url("../img/ipad2/page8/bird4_pg8.png");
+    width:119px;
+    height:60px;
+    left: 418px;
+    top: 719px;
+}
+.pg8_bigtree{
+    background-image: url("../img/ipad2/page8/big_tree.png");
+   height: 1024px;
+    left: 444px;
+    top: 0;
+    width: 324px;
+    z-index: 0;
+}
+.pg7_leaf{
+    background-image: url("../img/ipad2/page7/leaf.png");
+    width:45px;
+    height:91px;
+    left: 90px;
+    top: -60px;
+}
+.pg7_leaf2{
+    background-image: url("../img/ipad2/page7/leaf2.png");
+    width:66px;
+    height:41px;
+    left: 90px;
+    top: 32px;
+}
+.pg7_leaf3{
+    background-image: url("../img/ipad2/page7/leaf3.png");
+    width:74px;
+    height:55px;
+    left: 96px;
+    top: 111px;
+}
+.pg7_leaf4{
+    background-image: url("../img/ipad2/page7/leaf4.png");
+    width:61px;
+    height:84px;
+    left: 336px;
+    top: 152px;
+}
+.pg7_leaf5{
+    background-image: url("../img/ipad2/page7/leaf5.png");
+    width:73px;
+    height:46px;
+    left: -18px;
+    top: 130px;
+}
+.pg7_leaf6{
+    background-image: url("../img/ipad2/page7/leaf6.png");
+    width:61px;
+    height:85px;
+    left: 117px;
+    top: 210px;
+}
+.pg7_leaf7{
+    background-image: url("../img/ipad2/page7/leaf7.png");
+    width:90px;
+    height:50px;
+    left: -33px;
+    top: 261px;
+}
+
+.pg9_rock1{
+    background-image: url("../img/ipad2/page9/rock1.png");
+    width:9px;
+    height:11px;
+    left: 297px;
+    top: 850px;
+}
+.pg9_rock2{
+    background-image: url("../img/ipad2/page9/rock2.png");
+    width:13px;
+    height:12px;
+    left: 433px;
+    top: 861px;
+}
+.pg9_rock3{
+    background-image: url("../img/ipad2/page9/rock3.png");
+    width:10px;
+    height:10px;
+    left: 565px;
+    top: 838px;
+}
+.pg9_bird{
+    background-image: url("../img/ipad2/page9/bird_pg9.png");
+    width:139px;
+    height:133px;
+    left: -133px;
+    top: 761px;
+    z-index:100;
+    display:none;
+}
+.pg10_gretel_hold{
+    width:106px;
+    height:221px;
+    left: 261px;
+    top: 678px;
+
+
+}
+.pg10_gretelarm{
+    background-image: url("../img/ipad2/page10/gretel_arm.png");
+    width:106px;
+    height:221px;
+    left: 0px;
+    top: 0px;
+
+}
+.pg10_gretelarm_candy{
+    background-image: url("../img/ipad2/page10/pg10_gretelarm_candy.png");
+    width:42px;
+    height:41px;
+    left: 28px;
+    top: 1px;
+
+}
+.pg10_windowshadow{
+    background-image: url("../img/ipad2/page10/window_shadow.png");
+    width:32px;
+    height:43px;
+    left: 610px;
+    top: 247px;
+
+}
+.pg10_cookie1{
+    background-image: url("../img/ipad2/page10/cookie1.png");
+    width:37px;
+    height:37px;
+    left: 344px;
+    top: 379px;
+}
+.pg10_cookie2{
+    background-image: url("../img/ipad2/page10/cookie2.png");
+    width:48px;
+    height:47px;
+    left: 273px;
+    top: 397px;
+
+}
+.pg10_cookie3{
+    background-image: url("../img/ipad2/page10/cookie3.png");
+    width:40px;
+    height:39px;
+    left: 313px;
+    top: 429px;
+
+}
+.pg10_cookie4{
+    background-image: url("../img/ipad2/page10/cookie4.png");
+    width:38px;
+    height:36px;
+    left: 266px;
+    top: 445px;
+
+}
+.pg10_cookie5{
+    background-image: url("../img/ipad2/page10/cookie5.png");
+    width:81px;
+    height:76px;
+    left: 560px;
+    top: 431px;
+}
+.pg10_cookie6{
+    background-image: url("../img/ipad2/page10/cookie6.png");
+    width:60px;
+    height:61px;
+    left: 580px;
+    top: 533px;
+}
+.pg10_cookie7{
+    background-image: url("../img/ipad2/page10/cookie7.png");
+    width:32px;
+    height:33px;
+    left: 579px;
+    top: 605px;
+
+}
+.pg10_cookie8{
+    background-image: url("../img/ipad2/page10/cookie8.png");
+    width:56px;
+    height:57px;
+    left: 616px;
+    top: 621px;
+}
+.pg10_cookie9{
+    background-image: url("../img/ipad2/page10/cookie9.png");
+    width:153px;
+    height:171px;
+    left: 524px;
+    top: 674px;
+
+}
+.pg10_cookie10{
+    background-image: url("../img/ipad2/page10/cookie10.png");
+    width:75px;
+    height:76px;
+    left: 525px;
+    top: 858px;
+
+}
+.pg10_cookie11{
+    background-image: url("../img/ipad2/page10/cookie11.png");
+    width:80px;
+    height:62px;
+    left: 607px;
+    top: 870px;
+}
+.pg10_cookie12{
+    background-image: url("../img/ipad2/page10/cookie12.png");
+    width:78px;
+    height:73px;
+    left: 606px;
+    top: 925px;
+
+}
+.pg11_mantel{
+    background-image: url("../img/ipad2/page11/mantel.png");
+    width:601px;
+    height:201px;
+    left: 106px;
+    top: 686px;
+}
+
+.pg11_humo{
+    background-image: url("../img/ipad2/page11/smoke_1.png");
+    height: 212px;
+    left: 97px;
+    top: 439px;
+    width: 211px;
+    z-index: 100;
+}
+.pg11_cakecup{
+    background-image: url("../img/ipad2/page11/cake_cup.png");
+    height: 341px;
+    left: 130px;
+    top: 496px;
+    width: 497px;
+}
+.pg11_cookieman1{
+    background-image: url("../img/ipad2/page11/cookie_man1.png");
+    width:130px;
+    height:139px;
+    left: 258px;
+    top: 733px;
+}
+.pg11_cookieman2{
+    background-image: url("../img/ipad2/page11/cookie_man2.png");
+    width:105px;
+    height:143px;
+    left: 487px;
+    top: 733px;
+    z-index: 1;
+}
+.pg11_cookieman3{
+    background-image: url("../img/ipad2/page11/cookie_man3.png");
+    width:141px;
+    height:131px;
+    left: 561px;
+    top: 766px;
+    z-index: 2;
+}
+.pg11_cookieman4{
+    background-image: url("../img/ipad2/page11/cookie_man4.png");
+    width:143px;
+    height:158px;
+    left: 521px;
+    top: 696px;
+}
+.pg12_fire1{
+    background-image: url("../img/ipad2/page12/layer11.png");
+  height: 60px;
+    left: 395px;
+    top: 791px;
+    width: 63px;
+}
+.pg12_fire2{
+    background-image: url("../img/ipad2/page12/layer2.png");
+   height: 67px;
+    left: 308px;
+    top: 804px;
+    width: 45px;
+}
+.pg12_fire3{
+    background-image: url("../img/ipad2/page12/layer12.png");
+  height: 77px;
+    left: 382px;
+    top: 781px;
+    width: 45px;
+}
+.pg12_fire4{
+    background-image: url("../img/ipad2/page12/layer4.png");
+    height: 64px;
+    left: 315px;
+    top: 790px;
+    width: 57px;
+
+}
+.pg12_fire5{
+    background-image: url("../img/ipad2/page12/layer5.png");
+   height: 86px;
+    left: 337px;
+    top: 778px;
+    width: 52px;
+}
+.pg12_fire6{
+    background-image: url("../img/ipad2/page12/layer6.png");
+    height: 69px;
+    left: 334px;
+    top: 778px;
+    width: 66px;
+}
+.pg12_fire7{
+    background-image: url("../img/ipad2/page12/layer7.png");
+      height: 70px;
+    left: 347px;
+    top: 779px;
+    width: 79px;
+}
+.pg12_fire8{
+    background-image: url("../img/ipad2/page12/layer8.png");
+   height: 63px;
+    left: 373px;
+    top: 791px;
+    width: 62px;
+}
+.pg12_fire9{
+    background-image: url("../img/ipad2/page12/layer9.png");
+   height: 66px;
+    left: 390px;
+    top: 787px;
+    width: 62px;
+}
+.pg12_fire10{
+    background-image: url("../img/ipad2/page12/layer10.png");
+    height: 76px;
+    left: 371px;
+    top: 788px;
+    width: 64px;
+}
+.pg12_gretel{
+    background-image: url("../img/ipad2/page12/bodygirl.png");
+    height: 357px;
+    left: 155px;
+    top: 548px;
+    width: 217px;
+    z-index: 1;
+}
+.pg12_cuchara{
+    background-image: url("../img/ipad2/page12/cuchara.png");
+   height: 94px;
+    left: 281px;
+    top: 588px;
+    width: 110px;
+}
+.pg12_cadena{
+    background-image: url("../img/ipad2/page12/cadena.png");
+    height: 645px;
+    left: 263px;
+    top: 28px;
+    width: 241px;
+}
+.pg12_pan{
+    background-image: url("../img/ipad2/page12/olla.png");
+    height: 162px;
+    left: 289px;
+    top: 623px;
+    width: 194px;
+}
+.pg12_witch{
+    background-image: url("../img/ipad2/page12/bodyoldlady.png");
+   height: 389px;
+    left: 408px;
+    top: 532px;
+    width: 251px;
+}
+.pg12_witchhead{
+    background-image: url("../img/ipad2/page12/cabeza.png");
+    height: 164px;
+    left: 388px;
+    top: 413px;
+    width: 164px;
+    z-index: 1;
+}
+.pg12_woodfire{
+    background-image: url("../img/ipad2/page12/lena.png");
+    height: 72px;
+    left: 321px;
+    top: 832px;
+    width: 148px;
+}
+.pg12_witchneck{
+    background-image: url("../img/ipad2/page12/neck.png");
+   height: 90px;
+    left: 439px;
+    top: 501px;
+    width: 81px;
+}
+.pg13_tablet{
+    background-image: url("../img/ipad2/page13/tablet.png");
+    height: 352px;
+    left: 121px;
+    top: 538px;
+    width: 564px;
+}
+.pg13_herbs{
+    background-image: url("../img/ipad2/page13/herbs.png");
+    height: 218px;
+    left: 100px;
+    top: 405px;
+    width: 163px;
+}
+.pg13_apple{
+    background-image: url("../img/ipad2/page13/apple_slice.png");
+    height: 29px;
+    left: 321px;
+    top: 769px;
+    width: 35px;
+}
+.pg13_knife1{
+    background-image: url("../img/ipad2/page13/knife1.png");
+    height: 164px;
+    left: 421px;
+    top: 415px;
+    width: 81px;
+}
+.pg13_knife2{
+    background-image: url("../img/ipad2/page13/knife2.png");
+    height: 117px;
+    left: 471px;
+    top: 421px;
+    width: 86px;
+}
+.pg13_knife3{
+    background-image: url("../img/ipad2/page13/knife3.png");
+    height: 124px;
+    left: 538px;
+    top: 425px;
+    width: 75px;
+}
+.pg13_knife4{
+    background-image: url("../img/ipad2/page13/knife4.png");
+    height: 129px;
+    left: 612px;
+    top: 424px;
+    width: 81px;
+}
+.pg14_hansel{
+    background-image: url("../img/ipad2/page14/hansel_pg14.png");
+    height: 782px;
+    left: 0px;
+    top: 0;
+    width: 481px;
+}
+.pg14_hanselarm{
+    background-image: url("../img/ipad2/page14/hansel_arm.png");
+    height: 90px;
+    left: 128px;
+    top: 390px;
+    width: 205px;
+}
+.pg14_witch{
+    background-image: url("../img/ipad2/page14/witch_pg14.png");
+    height: 758px;
+    left: 212px;
+    top: 266px;
+    width: 537px;
+}
+
+.pg15_shelf{
+    background-image: url("../img/ipad2/page15/shelf.png");
+    height: 303px;
+    left: 80px;
+    top: 17px;
+    width: 627px;
+}
+.pg15_spoon1{
+    background-image: url("../img/ipad2/page15/spoon1.png");
+    height: 284px;
+    left: 112px;
+    top: 270px;
+    width: 109px;
+}
+.pg15_spoon2{
+    background-image: url("../img/ipad2/page15/spoon2.png");
+    height: 304px;
+    left: 231px;
+    top: 275px;
+    width: 58px;
+}
+.pg15_spoon3{
+    background-image: url("../img/ipad2/page15/spoon3.png");
+    height: 279px;
+    left: 280px;
+    top: 270px;
+    width: 71px;
+}
+.pg15_spoon4{
+    background-image: url("../img/ipad2/page15/spoon4.png");
+    height: 234px;
+    left: 338px;
+    top: 277px;
+    width: 78px;
+    z-index: 1;
+}
+.pg15_spoon5{
+    background-image: url("../img/ipad2/page15/spoon5.png");
+    height: 352px;
+    left: 391px;
+    top: 270px;
+    width: 78px;
+}
+.pg15_spoon6{
+    background-image: url("../img/ipad2/page15/spoon6.png");
+    height: 239px;
+    left: 460px;
+    top: 276px;
+    width: 70px;
+}
+.pg15_spoon7{
+    background-image: url("../img/ipad2/page15/spoon7.png");
+    height: 281px;
+    left: 525px;
+    top: 276px;
+    width: 75px;
+}
+.pg15_spoon8{
+    background-image: url("../img/ipad2/page15/spoon8.png");
+    height: 275px;
+    left: 580px;
+    top: 260px;
+    width: 113px;
+}
+
+.pg16_leftleg{
+    background-image: url("../img/ipad2/page16/left_leg.png");
+   height: 146px;
+    left: 262px;
+    top: 467px;
+    width: 85px;
+    z-index: 1;
+}
+.pg16_rightleg{
+    background-image: url("../img/ipad2/page16/right_leg.png");
+    height: 168px;
+    left: 399px;
+    top: 444px;
+    width: 88px;
+    z-index: 1;
+}
+.pg16_pan{
+    background-image: url("../img/ipad2/page16/pan.png");
+    height: 404px;
+    left: 132px;
+    top: 541px;
+    width: 432px;
+}
+.pg16_fire1{
+    background-image: url("../img/ipad2/page16/flame1.png");
+    height: 50px;
+    left: 236px;
+    top: 806px;
+    width: 86px;
+    z-index: 5;
+
+}
+.pg16_fire2{
+    background-image: url("../img/ipad2/page16/flame2.png");
+    height: 98px;
+    left: 260px;
+    top: 754px;
+    width: 65px;
+    z-index: 4;
+
+}
+.pg16_fire3{
+    background-image: url("../img/ipad2/page16/flame3.png");
+    height: 119px;
+    left: 309px;
+    top: 742px;
+    width: 31px;
+    z-index: 3;
+
+}
+.pg16_fire4{
+    background-image: url("../img/ipad2/page16/flame4.png");
+    height: 155px;
+    left: 336px;
+    top: 701px;
+    width: 37px;
+
+}
+.pg16_fire5{
+    background-image: url("../img/ipad2/page16/flame5.png");
+    height: 135px;
+    left: 370px;
+    top: 733px;
+    width: 44px;
+}
+.pg16_fire6{
+    background-image: url("../img/ipad2/page16/flame6.png");
+    height: 109px;
+    left: 412px;
+    top: 759px;
+    width: 36px;
+
+}
+.pg16_fire7{
+    background-image: url("../img/ipad2/page16/flame7.png");
+    height: 91px;
+    left: 438px;
+    top: 766px;
+    width: 58px;
+
+}
+.pg18_treasure{
+    background-image: url("../img/ipad2/page18/treasure.png");
+    height: 449px;
+    left: 128px;
+    top: 464px;
+    width: 466px;
+}
+.goldencoin{
+    background-image: url("../img/ipad2/page18/golden_coin.png");
+    height: 23px;
+    width: 37px;
+    z-index:1;
+
+}
+.pg18_goldencoin1{
+   left: 438px;
+    top: 648px;
+}
+.pg18_goldencoin2{
+   left: 338px;
+    top: 648px;
+}
+.pg18_goldencoin3{
+    left: 238px;
+    top: 648px;
+}
+.pg18_goldencoin4{
+   left: 319px;
+    top: 615px;
+}
+.pg18_goldencoin5{
+    left: 478px;
+    top: 624px;
+}
+.pg18_goldencoin6{
+    left: 398px;
+    top: 618px;
+}
+.pg18_goldencoin7{
+   left: 189px;
+    top: 633px;
+}
+.pg18_goldencoin8{
+    left: 253px;
+    top: 607px;
+}
+
+
+
+.pg18_light1{
+    background-image: url("../img/ipad2/page18/light1.png");
+    height: 166px;
+    left: 145px;
+    top: 544px;
+    width: 437px;
+}
+.pg18_light2{
+    background-image: url("../img/ipad2/page18/light2.png");
+    height: 497px;
+    left: 130px;
+    top: 428px;
+    width: 498px;
+}
+.pg19_arm1{
+    background-image: url("../img/ipad2/page19/arm1.png");
+    width: 135px;
+    height: 181px;
+    left: 200px;
+    top: 275px;
+}
+.pg19_arm2{
+    background-image: url("../img/ipad2/page19/arm2.png");
+    width: 141px;
+    height: 118px;
+    left: 467px;
+    top: 335px;
+}
+.pg19_arm3{
+    background-image: url("../img/ipad2/page19/arm3.png");
+    width: 163px;
+    height: 141px;
+    left: 115px;
+    top: 395px;
+}
+.pg19_arm4{
+    background-image: url("../img/ipad2/page19/arm4.png");
+    width: 171px;
+    height: 102px;
+    left: 541px;
+    top: 503px;
+}
+.pg19_arm5{
+    background-image: url("../img/ipad2/page19/arm5.png");
+    width: 150px;
+    height: 146px;
+    left: 542px;
+    top: 749px;
+}
+.pg19_bird1{
+    background-image: url("../img/ipad2/page19/bird_pg19.png");
+    width: 108px;
+    height: 84px;
+    left: 595px;
+    top: 59px;
+}
+.pg19_bird2{
+    background-image: url("../img/ipad2/page19/bird2_pg19.png");
+    width: 97px;
+    height: 108px;
+    left: 499px;
+    top: 28px;
+}
+.pg19_bird3{
+    background-image: url("../img/ipad2/page19/bird3_pg19.png");
+    width: 77px;
+    height: 42px;
+    left: 656px;
+    top: 19px;
+}
+#menu_main{
+    background-image: url("../img/ipad2/common/main_menu.png");
+    width:373px;
+    height:320px;
+}
+
+.menu_cnt a{
+    float:left;
+    
+}
+.common{
+	background-image: url("../img/ipad2/common/bg.jpg");
+
+}
+.dimensions{
+    width:768px;
+    height:1024px;
+    overflow:hidden !important;
+    background-repeat:no-repeat;
+
+}
+/* nav menu */
+.menu_cnt{
+    width:400px;
+    height:80px;
+    overflow:hidden;
+    left: 180px;
+    position: absolute;
+    top: 888px;
+}
+.menu_next{
+    background-image: url("../img/ipad2/common/hand_right.png");
+    width:81px;
+    height:40px;
+    margin-top: 30px;
+
+}
+.menu_next_empty{
+    width:81px;
+    height:40px;
+    margin-top: 30px;
+}
+.menu_back{
+    background-image: url("../img/ipad2/common/hand_left.png");
+    width:81px;
+    height:40px;
+    margin-top: 30px;
+}
+.menu_back_empty{
+    width:81px;
+    height:40px;
+    margin-top: 30px;
+}
+
+.menu_head{
+    background-image: url("../img/ipad2/common/menu_head.png");
+    width:134px;
+    height:94px;
+    margin-left: 30px;
+    margin-right:30px;
+}
+.menu_head_empty{
+    width:134px;
+    height:94px;
+    margin-left: 30px;
+    margin-right:30px;
+
+}
+/* nav menu */
+#pg2{
+background-image: url("../img/ipad2/page2/bg_page2.jpg");
+
+
+}
+#pg4{
+    background-image: url("../img/ipad2/page4/bg_page4.jpg");
+
+    
+}
+#pg8{
+    background-image: url("../img/ipad2/page8/bg_pg8.jpg");
+    
+    
+}
+#pg10{
+    background-image: url("../img/ipad2/page10/bg_pg10.jpg");
+    
+    
+}
+#pg14{
+    background-image: url("../img/ipad2/page14/bg_pg14.jpg");
+
+}
+#pg19{
+    background-image: url("../img/ipad2/page19/bg_pg19.jpg");
+    
+    
+}
+
+.snowflake1{
+    background-image: url("../img/ipad2/page2/flake1.png");
+    width:51px;
+    height:52px;
+    z-index:1;
+}
+.snowflake2{
+    background-image: url("../img/ipad2/page2/flake2.png");
+    width:49px;
+    height:49px;
+      z-index:1;
+}
+.snowflake3{
+    background-image: url("../img/ipad2/page2/flake3.png");
+    width:47px;
+    height:45px;
+      z-index:1;
+}
+.snowflake4{
+    background-image: url("../img/ipad2/page2/flake4.png");
+    width:50px;
+    height:48px;
+      z-index:1;
+}
+.snowflake5{
+    background-image: url("../img/ipad2/page2/flake5.png");
+    width:49px;
+    height:48px;
+      z-index:1;
+}
+.snowflake6{
+    background-image: url("../img/ipad2/page2/flake6.png");
+    width:52px;
+    height:52px;
+      z-index:1;
+}
+.snowflake7{
+    background-image: url("../img/ipad2/page2/flake7.png");
+    width:51px;
+    height:51px;
+      z-index:1;
+}
+.snowflake8{
+    background-image: url("../img/ipad2/page2/flake8.png");
+    width:51px;
+    height:52px;
+      z-index:1;
+}
+.pg1_flake1{
+   left: 31px;
+    top: 50px;
+}
+.pg1_flake2{
+    left: 79px;
+    top: 5px;
+}
+.pg1_flake3{
+    left: 6px;
+    top: 127px;
+}
+.pg1_flake4{
+    left: 1px;
+    top: 5px;
+}
+.pg1_flake5{
+    left: 68px;
+    top: 120px;
+}
+.pg1_flake6{
+    left: 107px;
+    top: 61px;
+}
+
+.pg1_flake7{
+    left: 7px;
+    top: 208px;
+}
+.pg1_flake8{
+    left: 67px;
+    top: 200px;
+}
+.pg3_flake1{
+    left: 81px;
+    top: 14px;
+}
+.pg3_flake2{
+    left: 144px;
+    top: 44px;
+}
+.pg3_flake3{
+    left: 210px;
+    top: 10px;
+}
+.pg3_flake4{
+  left: 280px;
+    top: 47px;
+}
+.pg3_flake5{
+    left: 351px;
+    top: 10px;
+}
+.pg3_flake6{
+    left: 424px;
+    top: 48px;
+}
+.pg3_flake7{
+   left: 500px;
+    top: 10px;
+}
+.pg3_flake8{
+    left: 570px;
+    top: 46px;
+}
+.pg3_flake9{
+   left: 650px;
+    top: 9px;
+}
+.pg3_flake10{
+    left: 708px;
+    top: 65px;
+}
+.pg3_flake11{
+    left: 85px;
+    top: 128px;
+}
+.pg3_flake12{
+   left: 362px;
+    opacity: 0.5;
+    top: 122px;
+}
+.pg3_flake13{
+    left: 496px;
+    opacity: 0.5;
+    top: 106px;
+}
+.pg3_flake14{
+    left: 652px;
+    top: 121px;
+}
+.pg3_flake15{
+    left: 10px;
+    top: 158px;
+}
+.pg3_flake16{
+    left: 10px;
+    top: 60px;
+}
+
+
+.commands{
+    display:none;
+
+}
+/*
+#menu_principal{
+    background-image: url("../img/ipad2/common/bg_menu.jpg");
+}
+*/

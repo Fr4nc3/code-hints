@@ -1,0 +1,1571 @@
+#mainpage{
+	background-image: url("../img/iphone4/cover/cover.jpg");
+}
+.homemain{
+   background-image: url("../img/iphone4/cover/hanselandgretel.png");
+    height: 535px;
+    left: 116px;
+    top: 190px;
+    width: 545px;
+
+}
+#main{
+    background-image: url("../img/iphone4/common/page_main_menu.jpg");
+
+}
+.txt,.birds,.objects{
+    position:absolute;
+    overflow:hidden;
+}
+.over{
+z-index:100;
+}
+#main_txt{
+
+}
+.main_txt_spanish{
+    background-image: url("../img/iphone4/main/spanish_main1_txt.png");
+    width:355px;
+    height:139px;
+    left: 300px;
+    top: 652px; 
+}
+/* page two birds */
+.pg2_bird1{
+    background-image: url("../img/iphone4/page2/bird1.png");
+    width:253px;
+    height:139px;
+    left: 50px;
+    top: 552px;
+}
+.pg2_bird2{
+    background-image: url("../img/iphone4/page2/bird2.png");
+    width:252px;
+    height:111px;
+    left: 0;
+    top: 265px;
+    
+}
+.pg2_bird3{
+    background-image: url("../img/iphone4/page2/bird3.png");
+    width:236px;
+    height:109px;
+    ßleft: 50px;
+    top: 10px;
+    
+}
+.pg2_bird4{
+    background-image: url("../img/iphone4/page2/bird4.png");
+    width:218px;
+    height:131px;
+    left: 250px;
+    top: 60px;
+    
+}
+.pg2_bird5{
+    background-image: url("../img/iphone4/page2/bird5.png");
+    width:213px;
+    height:127px;
+    left: 480px;
+    top: 100px;
+    
+}
+.pg2_bird6{
+    background-image: url("../img/iphone4/page2/bird6.png");
+    width:229px;
+    height:106px;
+    left: 480px;
+    top: 238px;
+    
+}
+.pg2_bird7{
+    background-image: url("../img/iphone4/page2/bird7.png");
+    width:140px;
+    height:226px;
+    left: 330px;
+    top: 310px;
+    
+}
+.pg2_bird8{
+    background-image: url("../img/iphone4/page2/bird8.png");
+    width:173px;
+    height:160px;
+    left: 400px;
+    top: 352px;
+    
+}
+.pg3_branch{
+    background-image: url("../img/iphone4/page3/branch.png");
+    width:589px;
+    height:169px;
+    left: 179px;
+    top: 630px;
+    
+}
+.pg3_bird{
+    background-image: url("../img/iphone4/page3/birdp3.png");
+    width:185px;
+    height:124px;
+    left: 450px;
+    top: 640px;
+    
+}
+.pg4_bird1{
+    background-image: url("../img/iphone4/page4/bird_pg4_1.png");
+    width:70px;
+    height:52px;
+    left: 414px;
+    top: 249px;
+    z-index: 1;
+    
+}
+.pg4_bird2{
+    background-image: url("../img/iphone4/page4/bird_pg4_2.png");
+    height: 51px;
+    left: 289px;
+    top: 158px;
+    width: 58px;
+    z-index: 1;
+    
+}
+.pg4_bird3{
+    background-image: url("../img/iphone4/page4/bird_pg4_3.png");
+    height: 49px;
+    left: 197px;
+    top: 163px;
+    width: 58px;
+    z-index: 1;
+    
+}
+.pg4_leaf1{
+    background-image: url("../img/iphone4/page4/pg4_leaf1.png");
+    width:51px;
+    height:48px;
+    left: 158px;
+    top: 16px;
+    
+}
+.pg4_leaf2{
+    background-image: url("../img/iphone4/page4/pg4_leaf2.png");
+    width:34px;
+    height:66px;
+    left: 155px;
+    top: 71px;
+    
+}
+.pg4_leaf3{
+    background-image: url("../img/iphone4/page4/pg4_leaf3.png");
+    width:46px;
+    height:42px;
+    left: 242px;
+    top: 28px;
+    
+}
+.pg4_leaf4{
+    background-image: url("../img/iphone4/page4/pg4_leaf4.png");
+    width:30px;
+    height:56px;
+    left: 226px;
+    top: 80px;
+    
+}
+.pg4_hansel{
+    background-image: url("../img/iphone4/page4/hansel_body.png");
+    width:454px;
+    height:391px;
+    left: 150px;
+    top: 580px;
+    z-index: 1;
+}
+.pg4_hansel_head{
+    background-image: url("../img/iphone4/page4/hansel_head.png");
+    height: 137px;
+    left: 439px;
+    top: 543px;
+    width: 193px;
+    
+}
+.pg4_crow{
+    background-image: url("../img/iphone4/page4/crow.png");
+    width:320px;
+    height:464px;
+    left: 150px;
+    top: 134px;
+}
+.pg4_crow_eyes_open{
+    background-image: url("../img/iphone4/page4/crow_open_eyes.png");
+    height: 14px;
+    left: 285px;
+    top: 226px;
+    width: 26px;
+    z-index: 1;
+}
+.pg4_rock1{
+    background-image: url("../img/iphone4/page4/rock1.png");
+    height: 18px;
+    left: 296px;
+    top: 726px;
+    width: 20px;
+    z-index: 10;
+}
+.pg4_rock2{
+    background-image: url("../img/iphone4/page4/rock2.png");
+    height: 19px;
+    left: 280px;
+    top: 732px;
+    width: 21px;
+    z-index: 10;
+}
+.pg5_wood{
+    background-image: url("../img/iphone4/page5/wood.png");
+    width:391px;
+    height:211px;
+    left: 180px;
+    top: 532px;
+
+}
+.pg5_rat{
+    background-image: url("../img/iphone4/page5/rat.png");
+    width:113px;
+    height:151px;
+    left: 402px;
+    top: 453px;
+
+}
+.pg5_dear_body{
+    background-image: url("../img/iphone4/page5/dear_body.png");
+    width:213px;
+    height:192px;
+    left: 100px;
+    top: 576px;
+    z-index: 1;
+
+}
+.pg5_dear_head{
+    background-image: url("../img/iphone4/page5/dear_head.png");
+    width:190px;
+    height:194px;
+    left: 184px;
+    top: 407px;
+    z-index: 2;
+
+}
+.pg5_owl{
+    background-image: url("../img/iphone4/page5/owl.png");
+    width:101px;
+    height:123px;
+        left: 280px;
+    top: 732px;
+
+}
+.pg5_spin{
+    background-image: url("../img/iphone4/page5/spin.png");
+    width:97px;
+    height:64px;
+    left: 580px;
+    top: 684px;
+
+}
+.pg5_squirrel{
+    background-image: url("../img/iphone4/page5/squirrel.png");
+    width:128px;
+    height:171px;
+    left: 314px;
+    top: 657px;
+}
+.pg6_dad_body{
+    background-image: url("../img/iphone4/page6/dad_body.png");
+    width:257px;
+    height:573px;
+    left: 237px;
+    top: 0;
+}
+.pg6_dad_left_hand{
+    background-image: url("../img/iphone4/page6/dad_left_hand.png");
+    width:197px;
+    height:301px;
+    left: 213px;
+    top: 167px;
+    z-index:10;
+}
+.pg6_dad_right_hand{
+    background-image: url("../img/iphone4/page6/dad_right_hand.png");
+    width:141px;
+    height:269px;
+    left: 430px;
+    top: 155px;
+    z-index:10;
+}
+.pg6_gretel_body{
+    background-image: url("../img/iphone4/page6/gretel_body.png");
+    width:183px;
+    height:323px;
+    left: 318px;
+    top: 274px;
+    z-index:1;
+}
+.pg6_gretel_hand{
+    background-image: url("../img/iphone4/page6/gretel_hand.png");
+    width:158px;
+    height:101px;
+    left: 257px;
+    top: 398px;
+    z-index:1;
+}
+.pg6_hansel_body{
+    background-image: url("../img/iphone4/page6/hansel_body.png");
+    width:239px;
+    height:414px;
+    left: 336px;
+    top: 152px;
+}
+
+.pg8_hansel{
+    background-image: url("../img/iphone4/page8/hansel_pg8.png");
+    width:349px;
+    height:565px;
+    left: 391px;
+    top: 364px;
+}
+.pg8_gretel{
+    background-image: url("../img/iphone4/page8/gretel_pg8.png");
+    width:288px;
+    height:536px;
+    left: 57px;
+    top: 494px;
+}
+.pg8_bird1{
+    background-image: url("../img/iphone4/page8/bird1_pg8.png");
+    width:91px;
+    height:63px;
+    left: 284px;
+    top: 594px;
+}
+.pg8_bird2{
+    background-image: url("../img/iphone4/page8/bird2_pg8.png");
+    width:92px;
+    height:43px;
+    left: 280px;
+    top: 517px;
+}
+.pg8_bird3{
+    background-image: url("../img/iphone4/page8/bird3_pg8.png");
+    width:97px;
+    height:59px;
+    left: 403px;
+    top: 552px;
+}
+.pg8_bird4{
+    background-image: url("../img/iphone4/page8/bird4_pg8.png");
+    width:119px;
+    height:60px;
+    left: 418px;
+    top: 719px;
+}
+.pg8_bigtree{
+    background-image: url("../img/iphone4/page8/big_tree.png");
+    width:768px;
+    height:1024px;
+    left: 0;
+    top: 0;
+    z-index:1;
+}
+.pg7_leaf{
+    background-image: url("../img/iphone4/page7/leaf.png");
+    width:45px;
+    height:91px;
+    left: 90px;
+    top: -60px;
+}
+.pg7_leaf2{
+    background-image: url("../img/iphone4/page7/leaf2.png");
+    width:66px;
+    height:41px;
+    left: 90px;
+    top: 32px;
+}
+.pg7_leaf3{
+    background-image: url("../img/iphone4/page7/leaf3.png");
+    width:74px;
+    height:55px;
+    left: 96px;
+    top: 111px;
+}
+.pg7_leaf4{
+    background-image: url("../img/iphone4/page7/leaf4.png");
+    width:61px;
+    height:84px;
+    left: 336px;
+    top: 152px;
+}
+.pg7_leaf5{
+    background-image: url("../img/iphone4/page7/leaf5.png");
+    width:73px;
+    height:46px;
+    left: -18px;
+    top: 130px;
+}
+.pg7_leaf6{
+    background-image: url("../img/iphone4/page7/leaf6.png");
+    width:61px;
+    height:85px;
+    left: 117px;
+    top: 210px;
+}
+.pg7_leaf7{
+    background-image: url("../img/iphone4/page7/leaf7.png");
+    width:90px;
+    height:50px;
+    left: -33px;
+    top: 261px;
+}
+
+.pg9_rock1{
+    background-image: url("../img/iphone4/page9/rock1.png");
+    width:9px;
+    height:11px;
+    left: 297px;
+    top: 850px;
+}
+.pg9_rock2{
+    background-image: url("../img/iphone4/page9/rock2.png");
+    width:13px;
+    height:12px;
+    left: 433px;
+    top: 861px;
+}
+.pg9_rock3{
+    background-image: url("../img/iphone4/page9/rock3.png");
+    width:10px;
+    height:10px;
+    left: 565px;
+    top: 838px;
+}
+.pg9_bird{
+    background-image: url("../img/iphone4/page9/bird_pg9.png");
+    width:139px;
+    height:133px;
+    left: 133px;
+    top: 761px;
+}
+.pg10_gretelarm{
+    background-image: url("../img/iphone4/page10/gretel_arm.png");
+    width:106px;
+    height:221px;
+    left: 261px;
+    top: 678px;
+
+}
+.pg10_windowshadow{
+    background-image: url("../img/iphone4/page10/window_shadow.png");
+    width:32px;
+    height:43px;
+    left: 610px;
+    top: 247px;
+
+}
+.pg10_cookie1{
+    background-image: url("../img/iphone4/page10/cookie1.png");
+    width:37px;
+    height:37px;
+    left: 344px;
+    top: 379px;
+}
+.pg10_cookie2{
+    background-image: url("../img/iphone4/page10/cookie2.png");
+    width:48px;
+    height:47px;
+    left: 273px;
+    top: 397px;
+
+}
+.pg10_cookie3{
+    background-image: url("../img/iphone4/page10/cookie3.png");
+    width:40px;
+    height:39px;
+    left: 313px;
+    top: 429px;
+
+}
+.pg10_cookie4{
+    background-image: url("../img/iphone4/page10/cookie4.png");
+    width:38px;
+    height:36px;
+    left: 266px;
+    top: 445px;
+
+}
+.pg10_cookie5{
+    background-image: url("../img/iphone4/page10/cookie5.png");
+    width:81px;
+    height:76px;
+    left: 560px;
+    top: 431px;
+}
+.pg10_cookie6{
+    background-image: url("../img/iphone4/page10/cookie6.png");
+    width:60px;
+    height:61px;
+    left: 580px;
+    top: 533px;
+}
+.pg10_cookie7{
+    background-image: url("../img/iphone4/page10/cookie7.png");
+    width:32px;
+    height:33px;
+    left: 579px;
+    top: 605px;
+
+}
+.pg10_cookie8{
+    background-image: url("../img/iphone4/page10/cookie8.png");
+    width:56px;
+    height:57px;
+    left: 616px;
+    top: 621px;
+}
+.pg10_cookie9{
+    background-image: url("../img/iphone4/page10/cookie9.png");
+    width:153px;
+    height:171px;
+    left: 524px;
+    top: 674px;
+
+}
+.pg10_cookie10{
+    background-image: url("../img/iphone4/page10/cookie10.png");
+    width:75px;
+    height:76px;
+    left: 525px;
+    top: 858px;
+
+}
+.pg10_cookie11{
+    background-image: url("../img/iphone4/page10/cookie11.png");
+    width:80px;
+    height:62px;
+    left: 607px;
+    top: 870px;
+}
+.pg10_cookie12{
+    background-image: url("../img/iphone4/page10/cookie12.png");
+    width:78px;
+    height:73px;
+    left: 567px;
+    top: 925px;
+
+}
+.pg11_mantel{
+    background-image: url("../img/iphone4/page11/mantel.png");
+    width:601px;
+    height:201px;
+    left: 106px;
+    top: 686px;
+}
+.pg11_cakecup{
+    background-image: url("../img/iphone4/page11/cake_cup.png");
+    width:519px;
+    height:310px;
+    left: 92px;
+    top: 511px;
+}
+.pg11_cookieman1{
+    background-image: url("../img/iphone4/page11/cookie_man1.png");
+    width:130px;
+    height:139px;
+    left: 258px;
+    top: 733px;
+}
+.pg11_cookieman2{
+    background-image: url("../img/iphone4/page11/cookie_man2.png");
+    width:105px;
+    height:143px;
+    left: 487px;
+    top: 733px;
+    z-index: 1;
+}
+.pg11_cookieman3{
+    background-image: url("../img/iphone4/page11/cookie_man3.png");
+    width:141px;
+    height:131px;
+    left: 561px;
+    top: 766px;
+    z-index: 2;
+}
+.pg11_cookieman4{
+    background-image: url("../img/iphone4/page11/cookie_man4.png");
+    width:143px;
+    height:158px;
+    left: 521px;
+    top: 696px;
+}
+.pg12_fire1{
+    background-image: url("../img/iphone4/page12/layer11.png");
+    height: 27px;
+    left: 395px;
+    top: 751px;
+    width: 25px;
+}
+.pg12_fire2{
+    background-image: url("../img/iphone4/page12/layer2.png");
+    height: 36px;
+    left: 310px;
+    top: 753px;
+    width: 30px;
+}
+.pg12_fire3{
+    background-image: url("../img/iphone4/page12/layer12.png");
+    height: 52px;
+    left: 382px;
+    top: 737px;
+    width: 41px;
+}
+.pg12_fire4{
+    background-image: url("../img/iphone4/page12/layer4.png");
+    height: 36px;
+    left: 322px;
+    top: 752px;
+    width: 30px;
+}
+.pg12_fire5{
+    background-image: url("../img/iphone4/page12/layer5.png");
+    height: 48px;
+    left: 339px;
+    top: 741px;
+    width: 22px;
+}
+.pg12_fire6{
+    background-image: url("../img/iphone4/page12/layer6.png");
+    height: 54px;
+    left: 353px;
+    top: 733px;
+    width: 18px;
+}
+.pg12_fire7{
+    background-image: url("../img/iphone4/page12/layer7.png");
+    height: 58px;
+    left: 360px;
+    top: 734px;
+    width: 20px;
+}
+.pg12_fire8{
+    background-image: url("../img/iphone4/page12/layer8.png");
+    height: 52px;
+    left: 367px;
+    top: 734px;
+    width: 22px;
+}
+.pg12_fire9{
+    background-image: url("../img/iphone4/page12/layer9.png");
+    height: 39px;
+    left: 382px;
+    top: 741px;
+    width: 28px;
+}
+.pg12_fire10{
+    background-image: url("../img/iphone4/page12/layer10.png");
+    height: 41px;
+    left: 365px;
+    top: 747px;
+    width: 29px;
+}
+.pg12_gretel{
+    background-image: url("../img/iphone4/page12/bodygirl.png");
+    height: 277px;
+    left: 202px;
+    top: 562px;
+    width: 142px;
+    z-index: 1;
+}
+.pg12_cuchara{
+    background-image: url("../img/iphone4/page12/cuchara.png");
+    height: 64px;
+    left: 308px;
+    top: 588px;
+    width: 62px;
+}
+.pg12_cadena{
+    background-image: url("../img/iphone4/page12/cadena.png");
+    height: 800px;
+    left: 321px;
+    top: -160px;
+    width: 103px;
+}
+.pg12_pan{
+    background-image: url("../img/iphone4/page12/olla.png");
+    height: 120px;
+    left: 316px;
+    top: 616px;
+    width: 120px;
+}
+.pg12_witch{
+    background-image: url("../img/iphone4/page12/bodyoldlady.png");
+    height: 310px;
+    left: 421px;
+    top: 532px;
+    width: 163px;
+}
+.pg12_witchhead{
+    background-image: url("../img/iphone4/page12/cabeza.png");
+    height: 122px;
+    left: 401px;
+    top: 461px;
+    width: 108px;
+    z-index: 1;
+}
+.pg12_woodfire{
+    background-image: url("../img/iphone4/page12/lena.png");
+    height: 60px;
+    left: 321px;
+    top: 769px;
+    width: 101px;
+}
+.pg13_tablet{
+    background-image: url("../img/iphone4/page13/tablet.png");
+    height: 352px;
+    left: 121px;
+    top: 538px;
+    width: 564px;
+}
+.pg13_herbs{
+    background-image: url("../img/iphone4/page13/herbs.png");
+    height: 218px;
+    left: 100px;
+    top: 405px;
+    width: 163px;
+}
+.pg13_apple{
+    background-image: url("../img/iphone4/page13/apple_slice.png");
+    height: 29px;
+    left: 321px;
+    top: 769px;
+    width: 35px;
+}
+.pg13_knife1{
+    background-image: url("../img/iphone4/page13/knife1.png");
+    height: 164px;
+    left: 421px;
+    top: 415px;
+    width: 81px;
+}
+.pg13_knife2{
+    background-image: url("../img/iphone4/page13/knife2.png");
+    height: 117px;
+    left: 471px;
+    top: 421px;
+    width: 86px;
+}
+.pg13_knife3{
+    background-image: url("../img/iphone4/page13/knife3.png");
+    height: 124px;
+    left: 538px;
+    top: 425px;
+    width: 75px;
+}
+.pg13_knife4{
+    background-image: url("../img/iphone4/page13/knife4.png");
+    height: 129px;
+    left: 612px;
+    top: 424px;
+    width: 81px;
+}
+.pg14_hansel{
+    background-image: url("../img/iphone4/page14/hansel_pg14.png");
+    height: 782px;
+    left: 12px;
+    top: 0;
+    width: 481px;
+}
+.pg14_hanselarm{
+    background-image: url("../img/iphone4/page14/hansel_arm.png");
+    height: 90px;
+    left: 138px;
+    top: 396px;
+    width: 205px;
+}
+.pg14_witch{
+    background-image: url("../img/iphone4/page14/witch_pg14.png");
+    height: 758px;
+    left: 212px;
+    top: 266px;
+    width: 537px;
+}
+
+.pg15_shelf{
+    background-image: url("../img/iphone4/page15/shelf.png");
+    height: 303px;
+    left: 80px;
+    top: 62px;
+    width: 627px;
+}
+.pg15_spoon1{
+    background-image: url("../img/iphone4/page15/spoon1.png");
+    height: 284px;
+    left: 111px;
+    top: 318px;
+    width: 109px;
+}
+.pg15_spoon2{
+    background-image: url("../img/iphone4/page15/spoon2.png");
+    height: 304px;
+    left: 237px;
+    top: 320px;
+    width: 58px;
+}
+.pg15_spoon3{
+    background-image: url("../img/iphone4/page15/spoon3.png");
+    height: 279px;
+    left: 287px;
+    top: 322px;
+    width: 71px;
+}
+.pg15_spoon4{
+    background-image: url("../img/iphone4/page15/spoon4.png");
+    height: 267px;
+    left: 350px;
+    top: 324px;
+    width: 95px;
+    z-index: 1;
+}
+.pg15_spoon5{
+    background-image: url("../img/iphone4/page15/spoon5.png");
+    height: 307px;
+    left: 391px;
+    top: 324px;
+    width: 78px;
+}
+.pg15_spoon6{
+    background-image: url("../img/iphone4/page15/spoon6.png");
+    height: 239px;
+    left: 460px;
+    top: 321px;
+    width: 70px;
+}
+.pg15_spoon7{
+    background-image: url("../img/iphone4/page15/spoon7.png");
+    height: 281px;
+    left: 525px;
+    top: 321px;
+    width: 75px;
+}
+.pg15_spoon8{
+    background-image: url("../img/iphone4/page15/spoon8.png");
+    height: 275px;
+    left: 562px;
+    top: 319px;
+    width: 113px;
+}
+
+.pg16_leftleg{
+    background-image: url("../img/iphone4/page16/left_leg.png");
+   height: 146px;
+    left: 262px;
+    top: 467px;
+    width: 85px;
+    z-index: 1;
+}
+.pg16_rightleg{
+    background-image: url("../img/iphone4/page16/right_leg.png");
+    height: 168px;
+    left: 399px;
+    top: 444px;
+    width: 88px;
+    z-index: 1;
+}
+.pg16_pan{
+    background-image: url("../img/iphone4/page16/pan.png");
+    height: 404px;
+    left: 132px;
+    top: 541px;
+    width: 432px;
+}
+.pg16_fire1{
+    background-image: url("../img/iphone4/page16/flame1.png");
+    height: 50px;
+    left: 236px;
+    top: 806px;
+    width: 86px;
+    z-index: 5;
+
+}
+.pg16_fire2{
+    background-image: url("../img/iphone4/page16/flame2.png");
+    height: 98px;
+    left: 260px;
+    top: 754px;
+    width: 65px;
+    z-index: 4;
+
+}
+.pg16_fire3{
+    background-image: url("../img/iphone4/page16/flame3.png");
+    height: 119px;
+    left: 309px;
+    top: 742px;
+    width: 31px;
+    z-index: 3;
+
+}
+.pg16_fire4{
+    background-image: url("../img/iphone4/page16/flame4.png");
+    height: 155px;
+    left: 336px;
+    top: 701px;
+    width: 37px;
+
+}
+.pg16_fire5{
+    background-image: url("../img/iphone4/page16/flame5.png");
+    height: 135px;
+    left: 370px;
+    top: 733px;
+    width: 44px;
+}
+.pg16_fire6{
+    background-image: url("../img/iphone4/page16/flame6.png");
+    height: 109px;
+    left: 412px;
+    top: 759px;
+    width: 36px;
+
+}
+.pg16_fire7{
+    background-image: url("../img/iphone4/page16/flame7.png");
+    height: 91px;
+    left: 438px;
+    top: 766px;
+    width: 58px;
+
+}
+.pg17_treasure{
+    background-image: url("../img/iphone4/page17/treasure.png");
+    height: 449px;
+    left: 128px;
+    top: 516px;
+    width: 466px;
+}
+.pg17_goldencoin{
+    background-image: url("../img/iphone4/page17/golden_coin.png");
+   height: 23px;
+    left: 438px;
+    top: 680px;
+    width: 37px;
+
+}
+.pg17_light1{
+    background-image: url("../img/iphone4/page17/light1.png");
+    height: 166px;
+    left: 145px;
+    top: 603px;
+    width: 437px;
+}
+.pg17_light2{
+    background-image: url("../img/iphone4/page17/light2.png");
+    height: 497px;
+    left: 130px;
+    top: 466px;
+    width: 498px;
+}
+.pg19_arm1{
+    background-image: url("../img/iphone4/page19/arm1.png");
+    width: 135px;
+    height: 181px;
+    left: 200px;
+    top: 275px;
+}
+.pg19_arm2{
+    background-image: url("../img/iphone4/page19/arm2.png");
+    width: 141px;
+    height: 118px;
+    left: 467px;
+    top: 335px;
+}
+.pg19_arm3{
+    background-image: url("../img/iphone4/page19/arm3.png");
+    width: 163px;
+    height: 141px;
+    left: 115px;
+    top: 395px;
+}
+.pg19_arm4{
+    background-image: url("../img/iphone4/page19/arm4.png");
+    width: 171px;
+    height: 102px;
+    left: 541px;
+    top: 503px;
+}
+.pg19_arm5{
+    background-image: url("../img/iphone4/page19/arm5.png");
+    width: 150px;
+    height: 146px;
+    left: 542px;
+    top: 749px;
+}
+.pg19_bird1{
+    background-image: url("../img/iphone4/page19/bird_pg19.png");
+    width: 108px;
+    height: 84px;
+    left: 595px;
+    top: 59px;
+}
+.pg19_bird2{
+    background-image: url("../img/iphone4/page19/bird2_pg19.png");
+    width: 97px;
+    height: 108px;
+    left: 499px;
+    top: 28px;
+}
+.pg19_bird3{
+    background-image: url("../img/iphone4/page19/bird3_pg19.png");
+    width: 77px;
+    height: 42px;
+    left: 656px;
+    top: 19px;
+}
+/**/
+.pg1_txt_spanish{
+    background-image: url("../img/iphone4/page1/spanish_pg1_txt.png");
+    width:545px;
+    height:716px;
+    left: 100px;
+    top: 40px; 
+}
+.pg1_txt_english{
+    background-image: url("../img/iphone4/page1/english_pg1_txt.png");
+    width:545px;
+    height:716px;
+    left: 100px;
+    top: 40px; 
+}
+.pg1_txt_french{
+    background-image: url("../img/iphone4/page1/french_pg1_txt.png");
+    width:545px;
+    height:716px;
+    left: 100px;
+    top: 40px; 
+}
+.pg1_txt_german{
+    background-image: url("../img/iphone4/page1/german_pg1_txt.png");
+    width:545px;
+    height:716px;
+    left: 100px;
+    top: 40px; 
+}
+.pg1_txt_portuguese{
+    background-image: url("../img/iphone4/page1/portuguese_pg1_txt.png");
+    width:545px;
+    height:716px;
+    left: 100px;
+    top: 40px; 
+}
+.pg3_txt_spanish{
+    background-image: url("../img/iphone4/page3/spanish_pg3_txt.png");
+    width:575px;
+    height:459px;
+    left: 100px;
+    top: 60px;
+}
+.pg3_txt_french{
+    background-image: url("../img/iphone4/page3/french_pg3_txt.png");
+    width:575px;
+    height:459px;
+    left: 100px;
+    top: 60px;
+}
+.pg3_txt_english{
+    background-image: url("../img/iphone4/page3/english_pg3_txt.png");
+    width:575px;
+    height:459px;
+    left: 100px;
+    top: 60px;
+}
+.pg3_txt_german{
+    background-image: url("../img/iphone4/page3/german_pg3_txt.png");
+    width:575px;
+    height:459px;
+    left: 100px;
+    top: 60px;
+}
+.pg3_txt_portuguese{
+    background-image: url("../img/iphone4/page3/portuguese_pg3_txt.png");
+    width:575px;
+    height:459px;
+    left: 100px;
+    top: 60px;
+}
+.pg5_txt_spanish{
+    background-image: url("../img/iphone4/page5/spanish_pg5_txt.png");
+    width:564px;
+    height:399px;
+    left: 100px;
+    top: 60px; 
+}
+.pg5_txt_french{
+    background-image: url("../img/iphone4/page5/french_pg5_txt.png");
+    width:564px;
+    height:399px;
+    left: 100px;
+    top: 60px; 
+}
+.pg5_txt_english{
+    background-image: url("../img/iphone4/page5/english_pg5_txt.png");
+    width:564px;
+    height:399px;
+    left: 100px;
+    top: 60px; 
+}
+.pg5_txt_german{
+    background-image: url("../img/iphone4/page5/german_pg5_txt.png");
+    width:564px;
+    height:399px;
+    left: 100px;
+    top: 60px; 
+}
+.pg5_txt_portuguese{
+    background-image: url("../img/iphone4/page5/portuguese_pg5_txt.png");
+    width:564px;
+    height:399px;
+    left: 100px;
+    top: 60px; 
+}
+.pg6_txt_spanish{
+    background-image: url("../img/iphone4/page6/spanish_pg6_txt.png");
+    width:573px;
+    height:294px;
+    left: 100px;
+    top: 590px;
+}
+.pg6_txt_french{
+    background-image: url("../img/iphone4/page6/french_pg6_txt.png");
+    width:573px;
+    height:294px;
+    left: 100px;
+    top: 590px;
+}
+.pg6_txt_english{
+    background-image: url("../img/iphone4/page6/english_pg6_txt.png");
+    width:573px;
+    height:294px;
+    left: 100px;
+    top: 590px;
+}
+.pg6_txt_german{
+    background-image: url("../img/iphone4/page6/german_pg6_txt.png");
+    width:573px;
+    height:294px;
+    left: 100px;
+    top: 590px;
+}
+.pg6_txt_portuguese{
+    background-image: url("../img/iphone4/page6/portuguese_pg6_txt.png");
+    width:573px;
+    height:294px;
+    left: 100px;
+    top: 590px;
+}
+.pg7_txt_spanish{
+    background-image: url("../img/iphone4/page7/spanish_pg7_txt.png");
+    width:564px;
+    height:714px;
+    left: 100px;
+    top: 100px; 
+}
+.pg7_txt_french{
+    background-image: url("../img/iphone4/page7/french_pg7_txt.png");
+    width:564px;
+    height:714px;
+    left: 100px;
+    top: 100px; 
+}
+.pg7_txt_english{
+    background-image: url("../img/iphone4/page7/english_pg7_txt.png");
+    width:564px;
+    height:714px;
+    left: 100px;
+    top: 100px; 
+}
+.pg7_txt_german{
+    background-image: url("../img/iphone4/page7/german_pg7_txt.png");
+    width:564px;
+    height:714px;
+    left: 100px;
+    top: 100px; 
+}
+.pg7_txt_portuguese{
+    background-image: url("../img/iphone4/page7/portuguese_pg7_txt.png");
+    width:564px;
+    height:714px;
+    left: 100px;
+    top: 100px; 
+}
+.pg9_txt_spanish{
+    background-image: url("../img/iphone4/page9/spanish_pg9_txt.png");
+    width:552px;
+    height:601px;
+    left: 100px;
+    top: 100px; 
+}
+.pg9_txt_english{
+    background-image: url("../img/iphone4/page9/english_pg9_txt.png");
+    width:552px;
+    height:601px;
+    left: 100px;
+    top: 100px; 
+}
+.pg9_txt_french{
+    background-image: url("../img/iphone4/page9/french_pg9_txt.png");
+    width:552px;
+    height:601px;
+    left: 100px;
+    top: 100px; 
+}
+.pg9_txt_portuguese{
+    background-image: url("../img/iphone4/page9/portuguese_pg9_txt.png");
+    width:552px;
+    height:601px;
+    left: 100px;
+    top: 100px; 
+}
+.pg11_txt_spanish{
+    background-image: url("../img/iphone4/page11/spanish_pg11_txt.png");
+    width:692px;
+    height:394px;
+    left: 45px;
+    top: 100px; 
+}
+.pg11_txt_french{
+    background-image: url("../img/iphone4/page11/french_pg11_txt.png");
+    width:692px;
+    height:394px;
+    left: 45px;
+    top: 100px;  
+}
+.pg11_txt_english{
+    background-image: url("../img/iphone4/page11/english_pg11_txt.png");
+    width:692px;
+    height:394px;
+    left: 45px;
+    top: 100px; 
+}
+.pg11_txt_german{
+    background-image: url("../img/iphone4/page11/german_pg11_txt.png");
+    width:692px;
+    height:394px;
+    left: 45px;
+    top: 100px; 
+}
+.pg11_txt_portuguese{
+    background-image: url("../img/iphone4/page11/portuguese_pg11_txt.png");
+    width:692px;
+    height:394px;
+    left: 45px;
+    top: 100px; 
+}
+.pg12_txt_spanish{
+    background-image: url("../img/iphone4/page12/spanish_pg12_txt.png");
+    width:564px;
+    height:309px;
+    left: 100px;
+    top: 100px; 
+}
+.pg12_txt_french{
+    background-image: url("../img/iphone4/page12/french_pg12_txt.png");
+    width:564px;
+    height:309px;
+    left: 100px;
+    top: 100px; 
+}
+.pg12_txt_english{
+    background-image: url("../img/iphone4/page12/english_pg12_txt.png");
+    width:564px;
+    height:309px;
+    left: 100px;
+    top: 100px; 
+}
+.pg12_txt_german{
+    background-image: url("../img/iphone4/page12/german_pg12_txt.png");
+    width:564px;
+    height:309px;
+    left: 100px;
+    top: 100px; 
+}
+.pg12_txt_portuguese{
+    background-image: url("../img/iphone4/page12/portuguese_pg12_txt.png");
+    width:564px;
+    height:309px;
+    left: 100px;
+    top: 100px; 
+}
+.pg13_txt_spanish{
+    background-image: url("../img/iphone4/page13/spanish_pg13_txt.png");
+    width:544px;
+    height:298px;
+    left: 100px;
+    top: 100px; 
+}
+.pg13_txt_english{
+    background-image: url("../img/iphone4/page13/english_pg13_txt.png");
+    width:544px;
+    height:298px;
+    left: 100px;
+    top: 100px; 
+}
+.pg13_txt_french{
+    background-image: url("../img/iphone4/page13/french_pg13_txt.png");
+    width:544px;
+    height:298px;
+    left: 100px;
+    top: 100px; 
+}
+.pg13_txt_german{
+    background-image: url("../img/iphone4/page13/german_pg13_txt.png");
+    width:544px;
+    height:298px;
+    left: 100px;
+    top: 100px; 
+}
+.pg13_txt_portuguese{
+    background-image: url("../img/iphone4/page13/portuguese_pg13_txt.png");
+    width:544px;
+    height:298px;
+    left: 100px;
+    top: 100px; 
+}
+.pg15_txt_spanish{
+    background-image: url("../img/iphone4/page15/spanish_pg15_txt.png");
+    width:518px;
+    height:278px;
+    left: 118px;
+    top: 600px;
+}
+.pg15_txt_english{
+    background-image: url("../img/iphone4/page15/english_pg15_txt.png");
+    width:518px;
+    height:278px;
+    left: 118px;
+    top: 600px;
+}
+.pg15_txt_french{
+    background-image: url("../img/iphone4/page15/french_pg15_txt.png");
+    width:518px;
+    height:278px;
+    left: 118px;
+    top: 600px;
+}
+.pg15_txt_german{
+    background-image: url("../img/iphone4/page15/german_pg15_txt.png");
+    width:518px;
+    height:278px;
+    left: 118px;
+    top: 600px;
+}
+.pg15_txt_portuguese{
+    background-image: url("../img/iphone4/page15/portuguese_pg15_txt.png");
+    width:517px;
+    height:149px;
+    left: 100px;
+    top: 100px; 
+}
+.pg16_txt_spanish{
+    background-image: url("../img/iphone4/page16/spanish_pg16_txt.png");
+    width:565px;
+    height:392px;
+    left: 100px;
+    top: 100px; 
+}
+.pg16_txt_english{
+    background-image: url("../img/iphone4/page16/english_pg16_txt.png");
+    width:565px;
+    height:392px;
+    left: 100px;
+    top: 100px; 
+}
+.pg16_txt_french{
+    background-image: url("../img/iphone4/page16/french_pg16_txt.png");
+    width:565px;
+    height:392px;
+    left: 100px;
+    top: 100px; 
+}
+.pg16_txt_german{
+    background-image: url("../img/iphone4/page16/german_pg16_txt.png");
+    width:565px;
+    height:392px;
+    left: 100px;
+    top: 100px; 
+}
+.pg16_txt_portuguese{
+    background-image: url("../img/iphone4/page16/portuguese_pg16_txt.png");
+    width:565px;
+    height:392px;
+    left: 100px;
+    top: 100px; 
+}
+.pg17_txt_spanish{
+    background-image: url("../img/iphone4/page17/spanish_pg17_txt.png");
+    width:557px;
+    height:422px;
+    left: 100px;
+    top: 100px; 
+}
+.pg17_txt_english{
+    background-image: url("../img/iphone4/page17/english_pg17_txt.png");
+    width:557px;
+    height:422px;
+    left: 100px;
+    top: 100px; 
+}
+.pg17_txt_french{
+    background-image: url("../img/iphone4/page17/french_pg17_txt.png");
+    width:557px;
+    height:422px;
+    left: 100px;
+    top: 100px; 
+}
+.pg17_txt_german{
+    background-image: url("../img/iphone4/page17/german_pg17_txt.png");
+    width:557px;
+    height:422px;
+    left: 100px;
+    top: 100px; 
+}
+.pg17_txt_portuguese{
+    background-image: url("../img/iphone4/page17/portuguese_pg17_txt.png");
+    width:557px;
+    height:422px;
+    left: 100px;
+    top: 100px; 
+}
+.pg18_txt_spanish{
+    background-image: url("../img/iphone4/page18/spanish_pg18_txt.png");
+    width:529px;
+    height:301px;
+    left: 100px;
+    top: 100px; 
+}
+.pg18_txt_english{
+    background-image: url("../img/iphone4/page18/english_pg18_txt.png");
+    width:529px;
+    height:301px;
+    left: 100px;
+    top: 100px; 
+}
+.pg18_txt_french{
+    background-image: url("../img/iphone4/page18/french_pg18_txt.png");
+    width:529px;
+    height:301px;
+    left: 100px;
+    top: 100px; 
+}
+.pg18_txt_german{
+    background-image: url("../img/iphone4/page18/german_pg18_txt.png");
+    width:529px;
+    height:301px;
+    left: 100px;
+    top: 100px; 
+}
+.pg18_txt_portuguese{
+    background-image: url("../img/iphone4/page18/portuguese_pg18_txt.png");
+    width:529px;
+    height:301px;
+    left: 100px;
+    top: 100px; 
+}
+#menu_main{
+    background-image: url("../img/iphone4/common/main_menu.png");
+    width:373px;
+    height:320px;
+}
+
+.menu_cnt a{
+    float:left;
+    
+}
+.common{
+	background-image: url("../img/iphone4/common/bg.jpg");
+
+}
+.dimensions{
+    width:768px;
+    height:1024px;
+    overflow:hidden;
+    background-repeat:no-repeat;
+
+}
+/* nav menu */
+.menu_cnt{
+    width:400px;
+    height:80px;
+    overflow:hidden;
+    left: 160px;
+    position: absolute;
+    top: 888px;
+}
+.menu_next{
+    background-image: url("../img/iphone4/common/hand_right.png");
+    width:81px;
+    height:40px;
+    margin-top: 30px;
+
+}
+.menu_back{
+    background-image: url("../img/iphone4/common/hand_left.png");
+    width:81px;
+    height:40px;
+    margin-top: 30px;
+}
+.menu_head{
+    background-image: url("../img/iphone4/common/menu_head.png");
+    width:134px;
+    height:94px;
+    margin-left: 30px;
+    margin-right:30px;
+}
+/* nav menu */
+#pg2{
+background-image: url("../img/iphone4/page2/bg_page2.jpg");
+
+
+}
+#pg4{
+    background-image: url("../img/iphone4/page4/bg_page4.jpg");
+
+    
+}
+#pg8{
+    background-image: url("../img/iphone4/page8/bg_pg8.jpg");
+    
+    
+}
+#pg10{
+    background-image: url("../img/iphone4/page10/bg_pg10.jpg");
+    
+    
+}
+#pg14{
+    background-image: url("../img/iphone4/page14/bg_pg14.jpg");
+
+}
+#pg19{
+    background-image: url("../img/iphone4/page19/bg_pg19.jpg");
+    
+    
+}
+.commands{
+    display:none;
+
+}
+#menu_principal{
+    background-image: url("../img/iphone4/common/main_menu.png");
+    width:373px;
+    height:320px;
+    overflow:hidden;
+}
+.tooltip {
+    background-image: url("../img/iphone4/common/main_menu.png");
+    width:373px;
+    height:320px;
+    overflow:hidden;
+    display:none;
+
+}
