@@ -1,0 +1,13 @@
+Month,Monthly_Avg,DailyMax_Avg,DailyMin_Avg,Record_High,Record_Low
+January,4.7,13.6,-4.1,48 ,-47 
+February,6.1,14.7,-2.4,43 ,-46 
+March,12.8,20.7,5,54 ,-38 
+April,23.9,30.4,17.4,60,-20 
+May,35.5,41.3,29.8,66,-2 
+June,45,50.4,39.5,72,8
+July,49.1,54.1,44,71,24
+August,48.1,53.3,43,72,20
+September,41.6,47.1,36.1,69,9
+October,30.2,36.4,24,62,-5
+November,20.7,28.1,13.3,52,-20 
+December,10.1,18.4,1.7,47,-46
