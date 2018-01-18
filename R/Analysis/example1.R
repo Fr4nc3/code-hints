@@ -53,7 +53,7 @@ scores.matrix
 # automated code. Create the values manually and then the data frame.
 
 #I used csv as example but, I wrote the dataframe from scratch
-#setwd("D:/studies/2017-fall/CS444/hw/CS544_HW1_Riesco/") #switch directory to be sure where the csv file is
+ #switch directory to be sure where the csv file is
 getwd()
 path <- file.path(getwd(),"weather.csv") # create the csv from the page and I load it 
 weather.info.csv <- read.csv(file=path, header=TRUE, sep=",")
