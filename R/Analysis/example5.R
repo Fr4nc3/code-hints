@@ -9,7 +9,7 @@ options(digits=10) # used to see the decimal values in the queries part2 [4]
 # The input data consists of the sequence from 1 to 20 (1:20). Show the following three
 # plots in a single row.
 # a) Show the histogram of the densities of this distribution.
-par(mfrow=c(1, 3)) # plot the 3 histogram in one row [2]                ### Thank you for using this! You are one of ONLY 2 students who actually use it!!!
+par(mfrow=c(1, 3)) # plot the 3 histogram in one row [2]                
 
 seq <- seq(1, 20)
 hist(seq, prob=TRUE,  main = "Histogram of 1:20") #[1]
@@ -53,8 +53,8 @@ data.info
 # Part2) Central Limit Theorem 
 # The data in the file queries.csv contains the number of queries Google has had each day for a one
 # year period (365 days). The data file is also available at
-# http://kalathur.com/cs544/data/queries.csv. Use this link to read the data using read.csv function
-# when submitting the homework.
+# queries.csv. Use this link to read the data using read.csv function
+
 set.seed(101)
 data.queries <- read.csv("queries.csv") #[3]
 data.queries <- as.numeric(unlist(data.queries))  # convert entries in numeric          ### Also, you could scale down by dividing by million ()
@@ -193,8 +193,7 @@ dataset <-MU284[randset  != 0,]
 dataset
 reg.table <-table(dataset$REG)
 reg.proportions <-prop.table(reg.table)            ### What you did here is finding % of the reg.table. 
-                                                   ### What you want to find is that % of those with respect to the "entire dataset." 
-                                                   ### table(dataset$REG)/table(MU284$REG)    (-6 pts for a,b,c)
+                                                   
 reg.proportions
 
 
