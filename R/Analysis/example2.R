@@ -16,14 +16,14 @@ bayes <- function (prior, likelihood) {
 }
 
 prior <- c(0.07, 0.93)
-like <- c(0.9, 0.25)         ### Your likelihood is not correct, therefore the output is not correct.  (-5 pts)
+like <- c(0.9, 0.25)         
 
 output <-bayes(prior, like)
 
 
 PA1=0.07  #event that the person selected has lung disease
 PA2=1-PA1 # 0.93 event that the person selected has no lung disease
-PB_A1=0.9       ### What are these?
+PB_A1=0.9       
 PB_A2=0.25
 
 # i) has lung disease and
@@ -75,20 +75,12 @@ all.equal(output[3], PI_T) #TRUE
 
 # Part 2) Random Variables - 
 
-    ###-----------------------------------------------------------------
-    ### Without Prof.Kalathur's code below, I don't think your code will run.
-    ### if (!is.element("prob", installed.packages()[,"Package"]))
-    ### install.packages("https://cran.r-project.org/src/contrib/Archive/prob/prob_0.9-2.tar.gz", repos = NULL, type = "both")
-    ### if (!is.element("combinat", installed.packages()[,"Package"]))
-    ###install.packages("combinat", dep = TRUE)
-    ### Load the library every time to run the following samples
-    ### library(prob)
-    ### Prob <- prob
+    
     ### ------------------------------------------------------------------
 
 # a) Consider the experiment of rolling a pair of dice. Using R, show how
 # would you define a random variable for the absolute value of the difference
-# of the two rolls, using a user-defined function.               ### Need to write a function in order to answer these (-4 pts)
+# of the two rolls, using a user-defined function.              
 S <- rolldie(2, makespace = TRUE)
 S <- addrv(S, U = abs(X2-X1)) # I used the example from module 2 notes and from sum random variables [2]
 # b) Using the above result, what is the probability that the two rolls differ by
