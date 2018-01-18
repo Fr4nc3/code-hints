@@ -202,37 +202,3 @@ ppois(15, lambda=10)
 # uniform distribution with a minimum wait time of 15 minutes and a maximum wait time of 180 minutes. If the TSA wait
 # time follows a uniform ~(15, 180) distribution, what is the average wait time?
 (180+15)/2
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
