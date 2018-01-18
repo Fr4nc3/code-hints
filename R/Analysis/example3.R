@@ -195,11 +195,11 @@ summary(mbl.win.data)
 
 # Part 8)
 # Initialize the House and Senate data as shown below:
-# house <- read.csv('http://kalathur.com/house.csv', stringsAsFactors = FALSE)
-# senate <- read.csv('http://kalathur.com/senate.csv', stringsAsFactors = FALSE)
+# house <- read.csv('house.csv', stringsAsFactors = FALSE)
+# senate <- read.csv('senate.csv', stringsAsFactors = FALSE)
 
-house <- read.csv('http://kalathur.com/house.csv', stringsAsFactors = FALSE)
-senate <- read.csv('http://kalathur.com/senate.csv', stringsAsFactors = FALSE)
+house <- read.csv('house.csv', stringsAsFactors = FALSE)
+senate <- read.csv('senate.csv', stringsAsFactors = FALSE)
 
 #house 
 #senate
@@ -242,8 +242,7 @@ house.vec[house.vec > outlier.ranges.house[2]]
 # d) What is the average number of years served by party line in the house
 # and senate?
 summary(senate$Years_in_office)             ### This gives only for senate as a whole.  The question is asking for 'by party (democrats/republican) in the house and senate
-                                            ### so you should get 5 results (democrats in house, republican in house, democrats in senate, republican in senate, independent in senate)
-                                            ### (-5 pts)
+                                            
 # mean is 9.95 almost 10 years
 
 
