@@ -3,6 +3,7 @@
 # from s.
 from collections import defaultdict
 
+
 # This class represents a directed graph using adjacency
 # list representation
 class Graph:
@@ -14,7 +15,7 @@ class Graph:
         self.graph = defaultdict(list)
 
     # function to add an edge to graph
-    def addEdge(self,u,v):
+    def addEdge(self, u, v):
         self.graph[u].append(v)
         print(self.graph)
 
@@ -22,7 +23,7 @@ class Graph:
     def BFS(self, s):
 
         # Mark all the vertices as not visited
-        visited = [False]*(len(self.graph))
+        visited = [False] * (len(self.graph))
         print(visited)
         # Create a queue for BFS
         queue = []
@@ -35,16 +36,15 @@ class Graph:
 
             # Dequeue a vertex from queue and print it
             s = queue.pop(0)
-            print (s)
+            print(s)
 
             # Get all adjacent vertices of the dequeued
             # vertex s. If a adjacent has not been visited,
             # then mark it visited and enqueue it
             for i in self.graph[s]:
-                if visited[i] == False:
+                if visited[i] is False:
                     queue.append(i)
                     visited[i] = True
-
 
 
 # Driver code
@@ -57,5 +57,5 @@ g.addEdge(2, 0)
 g.addEdge(2, 3)
 g.addEdge(3, 3)
 
-print ("Following is Breadth First Traversal (starting from vertex 2)")
+print("Following is Breadth First Traversal (starting from vertex 2)")
 g.BFS(2)

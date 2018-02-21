@@ -22,6 +22,7 @@ class UnorderedList:
         self.head = None
 
     def add(self):
+        pass
 
     def search(self, item):
         current = self.head
@@ -51,7 +52,7 @@ class UnorderedList:
             previous.setNext(current.getNext())
 
     def pop(self):
-
+      pass
     def size(self):
         current = self.head
         count = 0
