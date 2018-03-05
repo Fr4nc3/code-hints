@@ -24,3 +24,6 @@ mylist.remove(31)
 print(mylist.size())
 print(mylist.search(93))
 
+print(mylist.isEmpty())
+print(mylist.pop())
+
