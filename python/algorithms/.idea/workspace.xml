@@ -15,13 +15,14 @@
     <SUITE FILE_PATH="coverage/algorithms$repeated_char_remove.coverage" NAME="repeated_char_remove Coverage Results" MODIFIED="1517857726955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/algorithms$merge_sort.coverage" NAME="merge_sort Coverage Results" MODIFIED="1518055055865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/algorithms$bubble_sort.coverage" NAME="bubble_sort Coverage Results" MODIFIED="1517959021175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/algorithms$longestsubstring.coverage" NAME="longestsubstring Coverage Results" MODIFIED="1520293693179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/algorithms$complete_cycle_array.coverage" NAME="complete_cycle_array Coverage Results" MODIFIED="1518043532844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/algorithms$sum2number.coverage" NAME="sum2number Coverage Results" MODIFIED="1520291013997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/algorithms$merge_sort2.coverage" NAME="merge_sort2 Coverage Results" MODIFIED="1518120932800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="node_linked_list_test.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="node_linked_list_test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node_linked_list_test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
@@ -91,6 +92,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="longestsubstring.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/longestsubstring.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="complete_cycle_array.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/complete_cycle_array.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -135,6 +146,7 @@
         <option value="$PROJECT_DIR$/node.py" />
         <option value="$PROJECT_DIR$/sum2number.py" />
         <option value="$PROJECT_DIR$/node_linked_list_test.py" />
+        <option value="$PROJECT_DIR$/longestsubstring.py" />
       </list>
     </option>
   </component>
@@ -204,7 +216,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.sum2number">
+  <component name="RunManager" selected="Python.longestsubstring">
     <configuration name="hanoi" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -224,7 +236,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="merge_sort" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="longestsubstring" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -237,7 +249,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="algorithms" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/merge_sort.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/longestsubstring.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -301,19 +313,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.merge_sort" />
-      <item index="1" class="java.lang.String" itemvalue="Python.merge_sort2" />
-      <item index="2" class="java.lang.String" itemvalue="Python.hanoi" />
-      <item index="3" class="java.lang.String" itemvalue="Python.node_linked_list_test" />
-      <item index="4" class="java.lang.String" itemvalue="Python.sum2number" />
+      <item index="0" class="java.lang.String" itemvalue="Python.merge_sort2" />
+      <item index="1" class="java.lang.String" itemvalue="Python.hanoi" />
+      <item index="2" class="java.lang.String" itemvalue="Python.node_linked_list_test" />
+      <item index="3" class="java.lang.String" itemvalue="Python.sum2number" />
+      <item index="4" class="java.lang.String" itemvalue="Python.longestsubstring" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.sum2number" />
-        <item index="1" class="java.lang.String" itemvalue="Python.node_linked_list_test" />
-        <item index="2" class="java.lang.String" itemvalue="Python.hanoi" />
-        <item index="3" class="java.lang.String" itemvalue="Python.merge_sort2" />
-        <item index="4" class="java.lang.String" itemvalue="Python.merge_sort" />
+        <item index="0" class="java.lang.String" itemvalue="Python.longestsubstring" />
+        <item index="1" class="java.lang.String" itemvalue="Python.sum2number" />
+        <item index="2" class="java.lang.String" itemvalue="Python.node_linked_list_test" />
+        <item index="3" class="java.lang.String" itemvalue="Python.hanoi" />
+        <item index="4" class="java.lang.String" itemvalue="Python.merge_sort2" />
       </list>
     </recent_temporary>
   </component>
@@ -341,7 +353,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32994923" sideWeight="0.5104167" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32994923" sideWeight="0.48958334" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32994923" sideWeight="0.48958334" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="R Packages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -379,14 +391,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/binary_tree">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="37" lean-forward="false" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/repeated_char_remove.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -768,6 +772,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_linked_list_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sum2number.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -776,10 +788,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_linked_list_test.py">
+    <entry file="file://$PROJECT_DIR$/longestsubstring.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="270">
+          <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
           <folding />
         </state>
       </provider>
