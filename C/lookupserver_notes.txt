@@ -1,0 +1,37 @@
+
+======
+I added ulimit -u 256 
+
+a)
+mkfifo mypipe
+cat mypipe | nc -l <port #> | mdb-lookup > mypipe
+from 
+
+# add +x executable permission to the file if it doesn't have it 
+#chmod a+x mdb-lookup-server-nc.sh
+
+
+b)
+ps ajxfww
+
+
+
+the files that are shell scripts:
+ /bin/sh ./mdb-lookup-server-nc.sh
+
+c)
+I used as reference to kill children process 
+http://stackoverflow.com/questions/13273836/how-to-kill-child-of-fork
+I didn't do port error when it is denied because it doesn't break my code 
+for example
+
+
+port number: 80
+[pid=20532] mdb-lookup-server started on port 80
+nc: Permission denied
+
+
+
+and if the user enter ENTER 
+can enter a valid port or enter number until it a valid port 
+

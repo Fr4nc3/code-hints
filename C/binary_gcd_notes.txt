@@ -1,0 +1,61 @@
+
+Gcd prime
+======
+Mafile:
+
+main.c: 
+It gets two integers
+It doesn't test if the entries are int or not 
+It assumes they are integers 
+It calculates the integers average 
+It determinate if the integers are prime or not 
+It determinate which the gcd of the integers.
+
+prime.c:
+I implement a method that determinate if a number is 
+prime or not. 
+to implement I took as reference this definition on JAVA
+http://www.mkyong.com/java/how-to-determine-a-prime-number-in-java/
+
+gcd.c:
+To calculate the greatest common divisor (gcd)
+I uses the definition from these two stackoverflow. 
+
+I took ideas  from JAVA to and write my C solution  
+
+http://stackoverflow.com/questions/4009198/java-get-greatest-common-divisor
+http://stackoverflow.com/questions/13673600/how-to-write-a-simple-java
+-program-that-finds-the-greatest-common-divisor-betwee
+http://introcs.cs.princeton.edu/java/23recursion/Euclid.java.html
+
+Binary
+======
+Makefile:
+I created usual main.c and the output (executable) as convert 
+it doesn't have a default run like in the part 1 because 
+I specifically leave it out because it wasn't a requirement 
+and in the description for part 2 it is show how the "user" write 
+./convert 
+
+main.c:
+it gets one integer x we don't check if the entry is anything but an int 
+using the example from printf-test.c to convert signed decimal
+unsigned decimal and hexadecimal
+
+binary.c:
+the binary version of my code I google it and found 
+http://stackoverflow.com/questions/5263187/print-an-integer-in-binary-format-in-java
+and I adapt it to C 
+I wanted to do a string method but it was little harder that I aspected 
+I created a binary.h and binary.c that print an integer to a binary
+
+The binary shift operator in C is a double-less-than or a double-greater-than character. 
+Less-than means shifting to the left and greater-than the opposite. 
+The right shift operator, >>, shifts all of the bits in a value to the right 
+a specified number of times. 
+http://www.ee.oulu.fi/research/tklab/courses/521419A/c_intro.html
+
+
+
+
+

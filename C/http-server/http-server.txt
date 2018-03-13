@@ -1,0 +1,18 @@
+
+
+
+
+part 2
+=======
+I started building the servers from lab6 solutions
+
+./http-server 8888 /home/html localhost 9999
+
+a)
+I used these links as http server reference 
+http://stackoverflow.com/questions/409087/creating-a-web-server-in-pure-c
+http://kperisetla.blogspot.com/2012/07/simple-http-web-server-in-c.html
+https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+
+
+

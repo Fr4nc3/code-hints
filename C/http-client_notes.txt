@@ -1,0 +1,18 @@
+
+
+
+
+======
+In Makefile file, I change the path to the solutions in the mylib
+code base for part1 TCPechoServer.c 
+for the database reading I used 
+
+
+Http-client
+======
+code base for part2 TCPechoServer.c 
+http://joequery.me/code/snprintf-c/
+
+to get the usage message
+usage: http-client <host name> <port number> <file path>
+   ex) http-client www.example.com 80 /index.html

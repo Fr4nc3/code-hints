@@ -1,0 +1,150 @@
+
+
+Populate array
+======
+Mafile:
+helpful when I tested
+
+
+main.c:
+To populate the array a took as example this page
+https://www.cs.swarthmore.edu/~newhall/unixhelp/C_arrays.html#
+and I used a pointer because I think the idea of this lab was to learn pointers. 
+
+sort_integer.c: 
+
+void sort_integer_array(int *begin, int *end, int ascending);
+I used end pointer to calculate the size of the array. 
+
+
+sort descending and ascending this is the method that compare:
+int asc (const void * a, const void * b);
+int desc (const void * a, const void * b);
+I took the idea from here:
+http://www.tutorialspoint.com/c_standard_library/c_function_qsort.htm
+
+
+mycopy method. 
+I commented out memcpy and used a version from the book K&R2 page 106. I used a 'for' and limited the loop to the size of the array, because
+the book version gave me error detection when I ran it with Valgrind
+
+
+twecho String array
+======
+I use this http://stackoverflow.com/questions/5935933/dynamically-create-an-array-of-strings-with-malloc
+as example to create an allocated strings of array for static char **duplicateArgs(int argc, char **argv)
+
+http://stackoverflow.com/questions/23436669/how-to-free-an-array-of-char-pointer
+
+to make a copy of the argument I used this link as example 
+https://www.daniweb.com/programming/software-development/threads/59077/copy-argv-to-string-in-cnewbie-question
+strcpy(newArgs[i], argv[i]);
+to convert to uppercase I used 
+http://www.tutorialspoint.com/c_standard_library/c_function_toupper.htm
+addapting it to my code
+
+When I ran my code and I was gettig an error in duplicateArgs
+Uninitialised value was created by a heap allocation
+==31992==    by 0x40072C: duplicateArgs (twecho.c:22)
+
+I tried to different ways to fix it but it was imposible (at least I didn't find a good one) 
+but from this question 
+http://stackoverflow.com/questions/7759140/copying-command-line-arguments-into-an-array
+I read the suggestion  to add a NULL at the end of the array
+then I put it on my code 
+ *(newArgs + i) = NULL;
+
+Then it fixed my code. 
+
+Howerver, I had similar issue in part1 but I passed the size of the array to free the memmory.
+
+Moreover, when I re-read the lab2 description it was a hit to this problem 
+and in the book k&R2 page 115 how to solve the problem.
+
+
+Part 1 Log
+==========
+
+ valgrind --leak-check=yes ./isort
+==21498== Memcheck, a memory error detector
+==21498== Copyright (C) 2002-2011, and GNU GPL'd, by Julian Seward et al.
+==21498== Using Valgrind-3.7.0 and LibVEX; rerun with -h for copyright info
+==21498== Command: ./isort
+==21498==
+Please enter the size of the array:
+4
+First Array:
+1435532569
+1196659556
+1512804294
+59903910
+
+Second Array:
+59903910
+1196659556
+1435532569
+1512804294
+
+Third Array:
+1512804294
+1435532569
+1196659556
+59903910
+==21498==
+==21498== HEAP SUMMARY:
+==21498==     in use at exit: 0 bytes in 0 blocks
+==21498==   total heap usage: 3 allocs, 3 frees, 48 bytes allocated
+==21498==
+==21498== All heap blocks were freed -- no leaks are possible
+==21498==
+==21498== For counts of detected and suppressed errors, rerun with: -v
+==21498== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 2 from 2)
+
+Part 2 Log
+==========
+valgrind --leak-check=yes  --track-origins=yes ./twecho hello world
+==24987== Memcheck, a memory error detector
+==24987== Copyright (C) 2002-2011, and GNU GPL'd, by Julian Seward et al.
+==24987== Using Valgrind-3.7.0 and LibVEX; rerun with -h for copyright info
+==24987== Command: ./twecho hello world
+==24987==
+hello HELLO
+world WORLD
+==24987==
+==24987== HEAP SUMMARY:
+==24987==     in use at exit: 0 bytes in 0 blocks
+==24987==   total heap usage: 4 allocs, 4 frees, 53 bytes allocated
+==24987==
+==24987== All heap blocks were freed -- no leaks are possible
+==24987==
+==24987== For counts of detected and suppressed errors, rerun with: -v
+==24987== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 2 from 2)
+
+
+Part 2 Log without the trick
+===================================
+valgrind --leak-check=yes --track-origins=yes ./twecho hello world
+==31992== Memcheck, a memory error detector
+==31992== Copyright (C) 2002-2011, and GNU GPL'd, by Julian Seward et al.
+==31992== Using Valgrind-3.7.0 and LibVEX; rerun with -h for copyright info
+==31992== Command: ./twecho hello world
+==31992==
+hello HELLO
+world WORLD
+==31992== Conditional jump or move depends on uninitialised value(s)
+==31992==    at 0x400868: freeDuplicatedArgs (twecho.c:45)
+==31992==    by 0x400901: main (twecho.c:68)
+==31992==  Uninitialised value was created by a heap allocation
+==31992==    at 0x4C2B6CD: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==31992==    by 0x40072C: duplicateArgs (twecho.c:22)
+==31992==    by 0x4008A4: main (twecho.c:59)
+==31992==
+==31992==
+==31992== HEAP SUMMARY:
+==31992==     in use at exit: 0 bytes in 0 blocks
+==31992==   total heap usage: 4 allocs, 4 frees, 53 bytes allocated
+==31992==
+==31992== All heap blocks were freed -- no leaks are possible
+==31992==
+==31992== For counts of detected and suppressed errors, rerun with: -v
+==31992== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 2 from 2)

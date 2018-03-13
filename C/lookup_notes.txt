@@ -1,0 +1,62 @@
+Create a dblookup
+
+a)
+
+name please (will truncate to 15 chars): Francia
+msg please (will truncate to 23 chars): Kingdom of the Franks
+20555: {Francia} said {Kingdom of the Franks}
+
+lookup: Francia
+16777: {NathanHawthorne} said {France.  It was, in sho}
+20555: {Francia} said {Kingdom of the Franks}
+
+b) 
+
+for read in an infinite loop the loopup word 
+I used as reference this link 
+http://stackoverflow.com/questions/2496668/how-to-read-the-standard-input-into-string-variable-until-eof-in-c
+
+
+to read the db I used this link as reference 
+http://www.codingunit.com/c-tutorial-binary-file-io
+http://www.cplusplus.com/reference/cstdio/fread/
+http://stackoverflow.com/questions/13958328/how-to-read-from-binary-file-into-struct-c
+http://www.codingunit.com/c-tutorial-deleting-a-record-from-a-binary-file
+
+
+I used the same code from traverse to as example to print all the list
+
+in the beginning I was using removeAllNodes(list); to free memmory but I was having 
+leaks of memmory then I have to free the data
+
+To check if the look up string I usedd this link as example
+
+http://stackoverflow.com/questions/12784766/check-substring-exists-in-a-string-in-c
+
+word[5] = '\0'; this line fixed ==28638== ERROR SUMMARY: 41111 errors from 2 contexts (suppressed: 2 from 2)
+
+At the end I used strcasestr instead of strstr 
+strcasestr case insensitive, mdb-lookup from the professor is case sensitive 
+but I think it is better case insensitive version
+
+Valgrind
+===============
+valgrind --leak-check=full ./mdb-lookup mdb-cs3157
+==12236== Memcheck, a memory error detector
+==12236== Copyright (C) 2002-2011, and GNU GPL'd, by Julian Seward et al.
+==12236== Using Valgrind-3.7.0 and LibVEX; rerun with -h for copyright info
+==12236==
+
+lookup: Francia
+16777:{NathanHawthorne} said {France.  It was, in sho}
+20555:{Francia} said {Kingdom of the Franks}
+lookup:
+==12236==
+==12236== HEAP SUMMARY:
+==12236==     in use at exit: 0 bytes in 0 blocks
+==12236==   total heap usage: 41,113 allocs, 41,113 frees, 1,151,704 bytes allocated
+==12236==
+==12236== All heap blocks were freed -- no leaks are possible
+==12236==
+==12236== For counts of detected and suppressed errors, rerun with: -v
+==12236== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 2 from 2)
