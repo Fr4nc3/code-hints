@@ -1,11 +1,6 @@
-Francia F. Riesco 
-ff2214
-lab 9
-part1
-======
 
 a)
-ff2214@paris:~/cs3157/lab9$ ./test4
+./test4
 BASIC4TRACE: (0x7fff35644770)->MyString(const char *)   :line 13,constructor, x
 BASIC4TRACE: (0x7fff35644780)->MyString(const char *)   :line 14, constructor y
 BASIC4TRACE: (0x7fff356447b0)->MyString(const MyString&):line 5, copy constructor, a
@@ -32,8 +27,7 @@ BASIC4TRACE: (0x7fff35644790)->~MyString()              :line 19, AKA end of mai
 BASIC4TRACE: (0x7fff35644780)->~MyString()              :line 19, AKA end of main method: destructor, y 
 BASIC4TRACE: (0x7fff35644770)->~MyString()              :line 19, AKA end of main method: destructor, x
 
-b)
-ff2214@paris:~/cs3157/lab9$ ./test4
+b) ./test4
 BASIC4TRACE: (0x7fffb6f51670)->MyString(const char *)
 BASIC4TRACE: (0x7fffb6f51680)->MyString(const char *)
 BASIC4TRACE: (0x7fffb6f51620)->MyString(const char *)
