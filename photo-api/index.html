@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+     <script>document.write("<script type='text/javascript' src='index.js?v=" + Date.now() + "'><\/script>");</script>
+       <script>document.write("<link rel='stylesheet' href='index.css?v=" + Date.now() + "'\/>");</script>
+    <title>Photo Search API </title>
+  </head>
+  <body>
+
+<div class="flex-container">
+<header>
+  <h1>Photo Search API</h1>
+</header>
+
+
+<article class="article">
+   	<p>Search for <b> dogs, cats, puppies, kittens</b>, or anything else</p>
+	<br />
+    <input id="searchterm" type="text" placeholder="search"/>
+    <input type="radio" name="engine" value="tumblr" checked="checked"> Tumblr <input type="radio" name="engine" value="google"> Google 
+    <button id="search" onclick="onSearch(this)">search</button>
+    <div id="results"></div>
+</article>
+
+<footer>Copyright &copy; =)</footer>
+
+<div class="overlay is-hidden" id="overlay">
+  <div class="modal-content">
+    <span class="button-close" onclick="closeModal();"></span>
+    <div id="modalHeading"></div>
+    <div id="modalBody"></div>
+     <div id="modalFooter"><button class="button" onclick="closeModal();">Close</button></div>
+  </div>
+</div>
+</body>
+</html>

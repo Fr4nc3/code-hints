@@ -1,0 +1,137 @@
+.layout {
+    width: 50%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    max-width: 540px;
+}
+
+.row+.row {
+    margin-top: 4px;
+}
+
+.item {
+    width: 100%;
+    cursor: pointer;
+}
+
+.item+.item {
+    margin-left: 4px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.button-close {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAowAAAKMB8MeazgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAB5SURBVDiNrZPRCcAwCEQfnUiySAZuF8kSWeH6Yz8KrQZMQAicJ+epAB0YwAmYJKIADLic0/GPPCbQAnLznCd/4NWUFfkgy1VjH8CryA95ApYltAiTRCZxpuoW+gz9WXE6NPeg+ra1UDIxGlWEObe4SGxY5fIxlc75Bkt9V4JS7KWJAAAAAElFTkSuQmCC59ef34356faa7edebc7ed5432ddb673d');
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    padding: 20px 30px;
+    width: 600px;
+    position: relative;
+    min-height: 300px;
+    margin: 0 auto 0;
+    background: #fff;
+}
+
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+}
+
+.button {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+#modalFooter{
+    text-align: center;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container>* {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+.alert-header {
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+}
+.alert-body{
+    height: 100px;
+    margin: auto;
+    width: 50%;
+    padding: 100px;
+}
+.article {
+    text-align: left;
+}
+
+header {
+    background: #008CBA;
+    color: white;
+}
+
+footer {
+    background: #aaa;
+    color: white;
+}
+
+@media all and (min-width: 768px) {
+    .article {
+        -webkit-flex: 0 0px;
+        flex: 5 0px;
+        -webkit-order: 2;
+        order: 2;
+    }
+    footer {
+        -webkit-order: 3;
+        order: 3;
+    }
+}
