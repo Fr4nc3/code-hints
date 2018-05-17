@@ -9,7 +9,6 @@ angular.module('myApp')
     $scope.lineTotalDaily.formatY = "f";
     $scope.lineTotalDaily.legend = "bottom";
     DataService.getDailyTotal().then(function(data) {
-        console.log("Data here", data.data);
         $scope.lineTotalDaily.data = [{key: "Sales", values: data.data}];
     }).catch(function(err) {
         console.error("There was an error");
@@ -22,7 +21,6 @@ angular.module('myApp')
     $scope.lineAverageDaily.formatY = "f";
     $scope.lineAverageDaily.legend = "bottom";
     DataService.getDailyAvg().then(function(data) {
-        console.log("Data", data.data);
         $scope.lineAverageDaily.data = [{key: "Sales", values: data.data}];
     }).catch(function(err) {
         console.error("There was an error");
@@ -36,8 +34,7 @@ angular.module('myApp')
     $scope.lineTotalPerItem.formatY = "f";
     $scope.lineTotalPerItem.legend = "bottom";
     DataService.getDailyPerItem().then(function(data) {
-        console.log("Data", data.data);
-        $scope.lineTotalPerItem.data = [{key: "Dani", values: data.data[0]},{key: "Milki", values: data.data[1]},  ];
+        $scope.lineTotalPerItem.data = [{key: "Jonny", values: data.data[0]},{key: "Molly", values: data.data[1]},  ];
     }).catch(function(err) {
         console.error("There was an error");
     })
