@@ -124,7 +124,7 @@
     cursor: default;
     white-space: nowrap;
     overflow: hidden;
-    overflow-y: auto;
+    overflow-y: auto !important;
     -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.26);
     -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.26);
     box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.26); }
@@ -199,7 +199,7 @@
       height: calc(100% - 24px);
       margin-left: 0px;
       margin-right: 0px;
-      overflow-y: auto;
+      overflow-y: auto !important;
       overflow-x: hidden; }
       .mod .module-15 .module-content.no-header, .mod .module-20 .module-content.no-header, .mod .module-25 .module-content.no-header, .mod .module-30 .module-content.no-header, .mod .module-35 .module-content.no-header, .mod .module-40 .module-content.no-header, .mod .module-45 .module-content.no-header, .mod .module-50 .module-content.no-header,
       .mod .module-55 .module-content.no-header, .mod .module-60 .module-content.no-header, .mod .module-65 .module-content.no-header, .mod .module-70 .module-content.no-header, .mod .module-75 .module-content.no-header, .mod .module-80 .module-content.no-header, .mod .module-85 .module-content.no-header, .mod .module-100 .module-content.no-header, .mod .module-tab .module-content.no-header {
