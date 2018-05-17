@@ -28,6 +28,8 @@ bower install --save angular-chart.js
 
 to display the 3 graph
 
+![Screenshot](ui/images/example.png)
+
 
 
 ## THIS WAS AN IBM EXCERSISE 
