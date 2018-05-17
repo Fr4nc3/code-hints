@@ -1,0 +1,136 @@
+.line-chart .chart-buttons rect {
+    fill: green;
+    opacity: .25;
+    rx: .5em;
+    ry: .5em;
+}
+
+.line-chart circle {
+  stroke-width: 3;
+}
+
+.line-chart path, .line-chart line {
+  fill: none;
+  stroke-width: 2.5px;
+}
+
+.line-chart .legend-blue:hover,
+.line-chart .legend-orange:hover,
+.line-chart .legend-red:hover,
+.line-chart .legend-green:hover,
+.line-chart .legend-purple:hover {
+  fill: none !important;
+}
+
+.line-chart .blue path, .line-chart .blue line {
+  stroke: #4285f4;
+}
+
+.line-chart .blue circle {
+  stroke: #4285f4;
+}
+
+.line-chart .blue circle:hover {
+  fill: #4285f4;
+}
+
+.line-chart .orange path, .line-chart .orange line {
+  stroke: orange;
+}
+
+.line-chart .orange path.area, .line-chart .orange line.area {
+  stroke: none;
+  fill: orange;
+}
+.line-chart .orange circle {
+  stroke: orange;
+}
+
+.line-chart .orange circle:hover {
+  fill: orange;
+}
+
+.line-chart .lightgray path, .line-chart .lightgray line {
+  stroke: #aaa;
+}
+
+.line-chart .lightgray path.area, .line-chart .lightgray line.area {
+  stroke: none;
+  fill: #aaa;
+  opacity: 0.8;
+}
+
+.line-chart .lightgray circle {
+  stroke: #aaa;
+}
+
+.line-chart .lightgray circle:hover {
+  fill: #aaa;
+}
+
+.line-chart .gray path, .line-chart .gray line {
+  stroke: gray;
+}
+
+.line-chart .gray path.area, .line-chart .gray line.area {
+  stroke: none;
+  fill: #f0f0f0;
+  opacity: 0.8;
+}
+
+.line-chart .gray circle {
+  stroke: gray;
+}
+
+.line-chart .gray circle:hover {
+  fill: gray;
+}
+
+.line-chart .red path, .line-chart .red line {
+  stroke: red;
+}
+
+.line-chart .red path.area, .line-chart .red line.area {
+  stroke: none;
+  fill: #ffa0a0;
+}
+
+.line-chart .red circle {
+  stroke: red;
+}
+
+.line-chart .red circle:hover {
+  fill: red;
+}
+
+.line-chart .green path, .line-chart .green line {
+  stroke: green;
+}
+
+.line-chart .green circle {
+  stroke: green;
+}
+
+.line-chart .green circle:hover {
+  fill: green;
+}
+
+.line-chart .purple path, .line-chart .purple line {
+  stroke: purple;
+}
+
+.line-chart .purple circle {
+  stroke: purple;
+}
+
+.line-chart .purple circle:hover {
+  fill: purple;
+}
+
+.line-chart .dashed path, .line-chart .dashed line {
+  stroke-dasharray: 2,2;
+}
+
+.line-chart .no-circles circle {
+  display: none;
+}

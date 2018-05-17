@@ -1,0 +1,123 @@
+// Palette color classes
+.pal-primary-color {color: $palettePrimary;}
+.pal-primary-bg {background: $palettePrimary;}
+.pal-primary-fill {fill: $palettePrimary;}
+.pal-primary-stroke {stroke: $palettePrimary;}
+
+.pal-secondary-color {color: $paletteSecondary;}
+.pal-secondary-bg {background: $paletteSecondary;}
+.pal-secondary-fill {fill: $paletteSecondary;}
+.pal-secondary-stroke {stroke: $paletteSecondary;}
+
+.pal-tertiary-color {color: $paletteTertiary;}
+.pal-tertiary-bg {background: $paletteTertiary;}
+.pal-tertiary-fill {fill: $paletteTertiary;}
+.pal-tertiary-stroke {stroke: $paletteTertiary;}
+
+.pal-light-color {color: $paletteLight;}
+.pal-light-bg {background: $paletteLight;}
+.pal-light-fill {fill: $paletteLight;}
+.pal-light-stroke {stroke: $paletteLight;}
+
+.pal-dark-color {color: $paletteDark;}
+.pal-dark-bg {background: $paletteDark;}
+.pal-dark-fill {fill: $paletteDark;}
+.pal-dark-stroke {stroke: $paletteDark;}
+
+.pal-highlight-color {color: $paletteHighlight;}
+.pal-highlight-bg {background: $paletteHighlight;}
+.pal-highlight-fill {fill: $paletteHighlight;}
+.pal-highlight-stroke {stroke: $paletteHighlight;}
+
+// Illustrative tag
+.illustrative {
+    color: darkblue;
+    font-weight: 600;
+    &::after {
+        content: "[ILLUSTRATIVE]";
+    }
+}
+
+// Disabled selection
+.no-select {
+  -webkit-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+// Error message 
+.error-msg {
+    margin: 15px 0px;
+    text-align: center;
+    color: #dd4b39;
+    font-weight: 600;
+}
+
+md-toolbar.md-default-theme:not(.md-menu-toolbar), md-toolbar:not(.md-menu-toolbar) {
+    background-color: $palettePrimary;
+}
+
+.md-button.md-default-theme.md-accent.md-raised, .md-button.md-accent.md-raised, .md-button.md-default-theme.md-accent.md-fab, .md-button.md-accent.md-fab {
+    color: rgb(255,255,255);
+    background-color: $palettePrimary;
+    opacity: 0.95;
+
+}
+
+.md-button.md-default-theme.md-accent.md-raised:not([disabled]).md-focused, .md-button.md-accent.md-raised:not([disabled]).md-focused, .md-button.md-default-theme.md-accent.md-fab:not([disabled]).md-focused, .md-button.md-accent.md-fab:not([disabled]).md-focused {
+    color: rgb(255,255,255);
+    background-color: $palettePrimary;
+    opacity: 1;
+}
+
+.md-button.md-default-theme.md-accent.md-raised:not([disabled]):hover, .md-button.md-accent.md-raised:not([disabled]):hover, .md-button.md-default-theme.md-accent.md-fab:not([disabled]):hover, .md-button.md-accent.md-fab:not([disabled]):hover {
+    color: rgb(255,255,255);
+    background-color: $palettePrimary;
+    opacity: 1;
+}
+
+// pagination controls no boostrap
+.pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.pagination>li {
+    display: inline;
+}
+
+.pagination>li:first-child>a, .pagination>li:first-child>span {
+    margin-left: 0;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.pagination>li>a, .pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    text-decoration: none;
+    color: #428bca;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-left: -1px;
+}
+
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+    z-index: 2;
+    color: #fff;
+    background-color: #428bca;
+    border-color: #428bca;
+    cursor: default;
+}
+
+.pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus {
+    color: #2a6496;
+    background-color: #eee;
+    border-color: #ddd;
+}

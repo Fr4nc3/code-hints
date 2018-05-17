@@ -1,9 +1,19 @@
 
 *.pyc
-*.xml
-*.xml
+*.DS_Store
+*.exe
+*.pdb
+*.cache
+consoleApp/consoleApp/obj/x86/Debug/consoleApp.csproj.FileListAbsolute.txt
+cplusplus2/datastructure_list/
+python/algorithms/.idea/dictionaries/Fr4nc3.xml
+python/algorithms/.idea/workspace.xml
+python/algorithms/.idea/dictionaries/Fr4nc3.xml
+python/algorithms/.idea/dictionaries/Fr4nc3.xml
+consoleApp/.vs/consoleApp/xs/UserPrefs.xml
 .DS_Store
-.DS_Store
-*.xml
-*.xml
-.DS_Store
+*.history
+csv-fullstack-plot/.bowerrc
+*.log
+python/algorithms/.idea/workspace.xml
+csv-fullstack-plot/.Rhistory

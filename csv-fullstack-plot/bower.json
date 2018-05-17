@@ -1,0 +1,47 @@
+{
+  "name": "CSV chart example",
+  "description": "",
+  "main": "",
+  "authors": [],
+  "license": "",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.0",
+    "angular": "angular#1.5.9",
+    "angular-ui-router": "~0.2.17",
+    "angular-bootstrap": "2.2.0",
+    "angular-resource": "1.4.8",
+    "angular-cookies": "1.4.8",
+    "angular-material": "1.1.1",
+    "angular-animate": "1.5.8",
+    "angular-messages": "1.5.8",
+    "angular-ellipsis": "0.1.6",
+    "angular-aria": "1.5.8",
+    "angular-utils-pagination": "angular-utils-pagination#0.11.1",
+    "angular-chart.js": "^1.1.1",
+    "angular-nvd3": "^1.0.9",
+    "d3": "3.5.5",
+    "d3-tip": "0.6.7",
+    "ng-file-upload": "~12.0.4",
+    "ng-file-upload-shim": "~12.0.4",
+    "underscore": "1.8.3",
+    "moment": "~2.12.0",
+    "ng-cookies": "^1.1.1",
+    "md-data-table": "^2.2.0",
+    "leaflet": "^1.0.3",
+    "leaflet.markercluster": "^1.0.5"
+  },
+  "resolutions": {
+    "angular": "1.5.9",
+    "jquery": "~2.2.0",
+    "leaflet": ">= 1.0.3"
+  }
+}

@@ -55,6 +55,7 @@
       <w>.Platform</w>
       <w>.Primitive</w>
       <w>.RtangleCodeLabel</w>
+      <w>.S3MethodsClasses</w>
       <w>.S3PrimitiveGenerics</w>
       <w>.S3methods</w>
       <w>.S4methods</w>
@@ -118,7 +119,9 @@
       <w>.__C__XYZ</w>
       <w>.__C__abIndex</w>
       <w>.__C__activeBindingFunction</w>
+      <w>.__C__aic</w>
       <w>.__C__anova</w>
+      <w>.__C__anova.glimML</w>
       <w>.__C__anova.glm</w>
       <w>.__C__anova.glm.null</w>
       <w>.__C__aov</w>
@@ -159,6 +162,7 @@
       <w>.__C__diagonalMatrix</w>
       <w>.__C__dpoMatrix</w>
       <w>.__C__dppMatrix</w>
+      <w>.__C__drs</w>
       <w>.__C__dsCMatrix</w>
       <w>.__C__dsRMatrix</w>
       <w>.__C__dsTMatrix</w>
@@ -183,9 +187,13 @@
       <w>.__C__formula</w>
       <w>.__C__function</w>
       <w>.__C__functionWithTrace</w>
+      <w>.__C__geeglm</w>
+      <w>.__C__geese</w>
       <w>.__C__generalMatrix</w>
       <w>.__C__genericFunction</w>
       <w>.__C__genericFunctionWithTrace</w>
+      <w>.__C__glimML</w>
+      <w>.__C__glimQL</w>
       <w>.__C__glm</w>
       <w>.__C__glm.null</w>
       <w>.__C__glmRespMod</w>
@@ -194,6 +202,7 @@
       <w>.__C__groupGenericFunctionWithTrace</w>
       <w>.__C__hsearch</w>
       <w>.__C__iMatrix</w>
+      <w>.__C__iccbin</w>
       <w>.__C__if</w>
       <w>.__C__indMatrix</w>
       <w>.__C__index</w>
@@ -323,6 +332,7 @@
       <w>.__C__standardGeneric</w>
       <w>.__C__standardGenericWithTrace</w>
       <w>.__C__structure</w>
+      <w>.__C__summary.glimML</w>
       <w>.__C__summary.mle</w>
       <w>.__C__summary.slm</w>
       <w>.__C__summary.table</w>
@@ -333,6 +343,7 @@
       <w>.__C__triangularMatrix</w>
       <w>.__C__ts</w>
       <w>.__C__uninitializedField</w>
+      <w>.__C__varbin</w>
       <w>.__C__vector</w>
       <w>.__C__while</w>
       <w>.__C__xsparseVector</w>
@@ -1153,6 +1164,7 @@
       <w>`.__T__addlogo:pixmap`</w>
       <w>`.__T__all.equal:base`</w>
       <w>`.__T__all:base`</w>
+      <w>`.__T__anova:stats`</w>
       <w>`.__T__any:base`</w>
       <w>`.__T__anyNA:base`</w>
       <w>`.__T__as.array:base`</w>
@@ -1183,6 +1195,8 @@
       <w>`.__T__cov2cor:stats`</w>
       <w>`.__T__crossprod:base`</w>
       <w>`.__T__determinant:base`</w>
+      <w>`.__T__deviance:stats`</w>
+      <w>`.__T__df.residual:stats`</w>
       <w>`.__T__diag:base`</w>
       <w>`.__T__diag&lt;-:base`</w>
       <w>`.__T__diff:base`</w>
@@ -1226,6 +1240,7 @@
       <w>`.__T__norm:base`</w>
       <w>`.__T__pack:Matrix`</w>
       <w>`.__T__plot:graphics`</w>
+      <w>`.__T__predict:stats`</w>
       <w>`.__T__print:base`</w>
       <w>`.__T__prod:base`</w>
       <w>`.__T__profile:stats`</w>
@@ -1419,6 +1434,7 @@
       <w>`||`</w>
       <w>`~`</w>
       <w>a</w>
+      <w>aSAH</w>
       <w>a_ply</w>
       <w>aaply</w>
       <w>aareg</w>
@@ -1567,6 +1583,7 @@
       <w>ansari.test</w>
       <w>anscombe</w>
       <w>anti_join</w>
+      <w>antibio</w>
       <w>any</w>
       <w>anyDuplicated</w>
       <w>anyDuplicated.array</w>
@@ -1578,6 +1595,7 @@
       <w>anyNA.POSIXlt</w>
       <w>anyNA.numeric_version</w>
       <w>any_vars</w>
+      <w>aod</w>
       <w>aov</w>
       <w>aperm</w>
       <w>aperm.default</w>
@@ -1599,6 +1617,7 @@
       <w>ar.yw</w>
       <w>arcCurvature</w>
       <w>arctext</w>
+      <w>are.paired</w>
       <w>are_equal</w>
       <w>are_na</w>
       <w>area</w>
@@ -1870,6 +1889,7 @@
       <w>attr_getter</w>
       <w>attrassign</w>
       <w>attributes</w>
+      <w>auc</w>
       <w>augPred</w>
       <w>auglag</w>
       <w>austres</w>
@@ -1969,6 +1989,7 @@
       <w>besselK</w>
       <w>besselY</w>
       <w>beta</w>
+      <w>betabin</w>
       <w>betar</w>
       <w>between</w>
       <w>bezierGrob</w>
@@ -2267,6 +2288,12 @@
       <w>chr_len</w>
       <w>chroma_slice</w>
       <w>chull</w>
+      <w>ci</w>
+      <w>ci.auc</w>
+      <w>ci.coords</w>
+      <w>ci.se</w>
+      <w>ci.sp</w>
+      <w>ci.thresholds</w>
       <w>cipoisson</w>
       <w>circleGrob</w>
       <w>citEntry</w>
@@ -2363,6 +2390,7 @@
       <w>coerce_class</w>
       <w>coerce_lang</w>
       <w>coerce_type</w>
+      <w>cohorts</w>
       <w>col</w>
       <w>col.whitebg</w>
       <w>col2hcl</w>
@@ -2874,6 +2902,7 @@
       <w>divide_by</w>
       <w>divide_by_int</w>
       <w>dixon.test</w>
+      <w>dja</w>
       <w>dlnorm</w>
       <w>dlogis</w>
       <w>dlply</w>
@@ -2892,6 +2921,7 @@
       <w>dogs</w>
       <w>dollar</w>
       <w>dollar_format</w>
+      <w>donner</w>
       <w>dontCheck</w>
       <w>dose.p</w>
       <w>dot3d</w>
@@ -3695,6 +3725,7 @@
       <w>ggpubr</w>
       <w>ggqqplot</w>
       <w>ggrepel</w>
+      <w>ggroc</w>
       <w>ggsave</w>
       <w>ggscatter</w>
       <w>ggscatterhist</w>
@@ -3901,6 +3932,7 @@
       <w>h4</w>
       <w>h5</w>
       <w>h6</w>
+      <w>has.partial.auc</w>
       <w>hasArg</w>
       <w>hasLoadAction</w>
       <w>hasMethod</w>
@@ -4023,6 +4055,7 @@
       <w>hue_pal</w>
       <w>hue_slice</w>
       <w>hvc2mnsl</w>
+      <w>iccbin</w>
       <w>icon</w>
       <w>iconv</w>
       <w>iconvlist</w>
@@ -4143,6 +4176,7 @@
       <w>inverseResponsePlot</w>
       <w>invert_match</w>
       <w>invisible</w>
+      <w>invlink</w>
       <w>invoke</w>
       <w>invokeRestart</w>
       <w>invokeRestartInteractively</w>
@@ -4631,9 +4665,11 @@
       <w>linearizeMlist</w>
       <w>lines</w>
       <w>lines.default</w>
+      <w>lines.roc</w>
       <w>lines3d</w>
       <w>linesGrob</w>
       <w>linetype_pal</w>
+      <w>link</w>
       <w>liply</w>
       <w>list</w>
       <w>list.dirs</w>
@@ -4651,6 +4687,7 @@
       <w>list_modify</w>
       <w>list_spinners</w>
       <w>litter</w>
+      <w>lizards</w>
       <w>ll</w>
       <w>llines</w>
       <w>llply</w>
@@ -4972,6 +5009,7 @@
       <w>mget</w>
       <w>mgus</w>
       <w>mgus2</w>
+      <w>mice</w>
       <w>michelson</w>
       <w>midwest</w>
       <w>mime</w>
@@ -5062,6 +5100,7 @@
       <w>multcompView</w>
       <w>multhist</w>
       <w>multi.menu</w>
+      <w>multiclass.roc</w>
       <w>multiedit</w>
       <w>multinom</w>
       <w>multipleClasses</w>
@@ -5354,6 +5393,8 @@
       <w>ordered</w>
       <w>ordinal</w>
       <w>ordinal_format</w>
+      <w>orob1</w>
+      <w>orob2</w>
       <w>outer</w>
       <w>outlier</w>
       <w>outlier.test</w>
@@ -5373,6 +5414,7 @@
       <w>p.adjust</w>
       <w>p.adjust.methods</w>
       <w>p2p_arrows</w>
+      <w>pROC</w>
       <w>pacf</w>
       <w>pack</w>
       <w>packBits</w>
@@ -5674,6 +5716,7 @@
       <w>plot.new</w>
       <w>plot.qss1</w>
       <w>plot.qss2</w>
+      <w>plot.roc</w>
       <w>plot.rq.process</w>
       <w>plot.rqs</w>
       <w>plot.rqss</w>
@@ -5786,6 +5829,7 @@
       <w>power</w>
       <w>power.anova.test</w>
       <w>power.prop.test</w>
+      <w>power.roc.test</w>
       <w>power.t.test</w>
       <w>powerTransform</w>
       <w>ppgetregion</w>
@@ -5905,6 +5949,7 @@
       <w>print.summaryDefault</w>
       <w>print.summaryPB</w>
       <w>print.table</w>
+      <w>print.wald.test</w>
       <w>print.warnings</w>
       <w>print.xtable</w>
       <w>print.xtableFtable</w>
@@ -6051,7 +6096,9 @@
       <w>quartzFont</w>
       <w>quartzFonts</w>
       <w>quasi</w>
+      <w>quasibin</w>
       <w>quasibinomial</w>
+      <w>quasipois</w>
       <w>quasipoisson</w>
       <w>quickdf</w>
       <w>quickplot</w>
@@ -6081,6 +6128,7 @@
       <w>rTweedie</w>
       <w>rWishart</w>
       <w>r_ply</w>
+      <w>rabbits</w>
       <w>radau</w>
       <w>radial.grid</w>
       <w>radial.pie</w>
@@ -6101,6 +6149,7 @@
       <w>rank</w>
       <w>rankMatrix</w>
       <w>ranks</w>
+      <w>raoscott</w>
       <w>raply</w>
       <w>rapply</w>
       <w>rasterGrob</w>
@@ -6492,6 +6541,8 @@
       <w>rnegbin</w>
       <w>rnorm</w>
       <w>road</w>
+      <w>roc</w>
+      <w>roc.test</w>
       <w>rocco</w>
       <w>rock</w>
       <w>rollapply</w>
@@ -6608,6 +6659,7 @@
       <w>safeError</w>
       <w>safely</w>
       <w>salinity</w>
+      <w>salmonella</w>
       <w>same_src</w>
       <w>sammon</w>
       <w>sample</w>
@@ -7127,6 +7179,7 @@
       <w>splitLayout</w>
       <w>split_indices</w>
       <w>split_labels</w>
+      <w>splitbin</w>
       <w>splom</w>
       <w>spm</w>
       <w>spread</w>
@@ -8091,6 +8144,7 @@
       <w>varIdent</w>
       <w>varPower</w>
       <w>varWeights</w>
+      <w>varbin</w>
       <w>variable.names</w>
       <w>varimax</w>
       <w>variogram</w>
@@ -8154,6 +8208,7 @@
       <w>vpTree</w>
       <w>waders</w>
       <w>waiver</w>
+      <w>wald.test</w>
       <w>walk</w>
       <w>walk2</w>
       <w>walkCode</w>
