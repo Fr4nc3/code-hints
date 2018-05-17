@@ -26,7 +26,7 @@ bower install --save angular-chart.js
 ```
 
 
-to display the 3 graph
+### Display the 3 graph
 
 ![Screenshot](ui/images/example.png)
 
