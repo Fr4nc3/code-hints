@@ -10,13 +10,13 @@ library(stringr)
 setwd("path")
 getwd()
 
-#a)	(20 points) Retrieve the NBA data for the 2007-2008 season.
+#a)	Retrieve the NBA data for the 2007-2008 season.
 nba.season <- "07-08"
 nba.data <- fetch_NBAPlayerStatistics(nba.season)
 save(nba.data, file="nba.data.RData")
 load(file="nba.data.RData")
 names(nba.data)
-#b)	(20 points) Subset the data for your favorite team. Show the code you used to find: 
+#b)	Subset the data for your favorite team. Show the code you used to find: 
 #Get favorite Team #Get Champion Team 
 newyork.knicks <- subset(nba.data, Team == 'NYK')
 boston.celtics <- subset(nba.data, Team == 'BOS')
@@ -26,7 +26,7 @@ newyork.knicks.table.chart <- gvisTable(newyork.knicks[,c(2,4:12)])
 plot(newyork.knicks.table.chart)
 plot(boston.celtics.table.chart)
 
-# o	Which player has the best three point percentage? 
+# Which player has the best three point percentage? 
 #"ThreesMade"  "ThreesAttempted" 
 knicks.goals.Three <- aggregate(newyork.knicks$ThreesMade, by = list(newyork.knicks$Name),FUN = "sum")
 names(knicks.goals.Three)<-c("Names","ThreesMade")
@@ -69,7 +69,7 @@ celtics.steals <- aggregate(boston.celtics$Steals,by = list(boston.celtics$Name)
 names(celtics.steals)<-c("Names","Steals")
 head(celtics.steals[order(-celtics.steals$Steals),],3) #top 3
 
-#c)	(20 points) Show 5 teams for the 2007-2008 season that have the most wins in descending order. 
+#c)	Show 5 teams for the 2007-2008 season that have the most wins in descending order. 
 
 #http://www.landofbasketball.com/yearbyyear/2007_2008_standings.htm
 webpage <- paste0("http://www.landofbasketball.com/","yearbyyear/2007_2008_standings.htm")
@@ -87,7 +87,7 @@ nba.wins<- aggregate(nba$W,by = list(nba$Team),FUN = "sum")
 names(nba.wins)<-c("Team","Wins")
 head(nba.wins[order(-nba.wins$Wins),],5) #top 5
 
-#d)	 (20 points) Use at least 5 Google charts (your choice) to show relevant data from this dataset.
+#d)	Use at least 5 Google charts (your choice) to show relevant data from this dataset.
 
 nba.table.chart <- gvisTable(nba[,c("Team", "W", "L", "Pct", "GB")])
 plot(nba.table.chart)
