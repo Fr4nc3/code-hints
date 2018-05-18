@@ -105,7 +105,7 @@ Celtics
 
 ![Screenshot](images/nba_celtics_gauge.png)
 
-##Basketball World Cup Champions
+## Basketball World Cup Champions
 
 With gvisGeoChart function to display the location on the world map of the last 5 Basketball World Cup Champions that you can find at: 
 http://www.landofbasketball.com/world_cup_stats/medals_by_year.htm
