@@ -7,7 +7,9 @@
 
 ### Using library library(UsingR)
 
-
+Use the primes (UsingR) dataset. Use the diff function to compute the
+differences between successive primes. Show the frequencies of these
+differences. Show the barplot of these differences.
 ```R
 library(UsingR)
 
@@ -19,8 +21,7 @@ ylim=c(0, 100),col="green", xlab="Successive primes difference")
 
 ![Screenshot](images/example3_part1.png)
 
-
-example3_part2_d.png
+barplot for the number of coins by year.
 ```R
 attach(coins)
 coins # check the shape of coins 
@@ -28,19 +29,20 @@ coins.table <- table(year,value)
 # Show the barplot for the number of coins by year.
 barplot(apply(coins.table,1,sum),ylim=c(0,50), col="blue", xlab="Year", ylab="Number of coins by year")
 ```
-
 ![Screenshot](images/example3_part2_d.png)
 
+Show the horizontal boxplot of the data along with the appropriate labels
+on the plot.
 ```R
-# Show the horizontal boxplot of the data along with the appropriate labels
-# on the plot.
+
+stem(south)
 boxplot(south, horizontal=TRUE, xaxt="n", col="blue")
 axis(side=1, at=five.num, labels=TRUE)
 text(five.num, rep(1.2,5), srt=90, adj=0, labels=c("Min","Lower Hinge","Median","Upper Hinge","Max")) 
 ```
 ![Screenshot](images/example3_part3_c.png)
 
-
+Show the histogram of the data.
 ```R
 pi.frequency <-table(pi2000)
 pi.frequency
@@ -48,13 +50,15 @@ pi.frequency
 # Show the percentages of their frequencies.
 pi.freq.perc <- (pi.frequency/length(pi2000))*100
 pi.freq.perc
-# Show the histogram of the data.
 
 hist(pi2000, col="green")
 ```
 ![Screenshot](images/example3_part4_c.png)
 
 
+Using appropriate colors, show the mosaic plot for the data. Also show
+the barplot for Gender and Sport separately with the bars side by side. Add
+legend to the plots.
 ```R
 # Using cbind, create the matrix for the above data.
 matrix<-cbind(c(25,20), c(10,40), c(15,30))
@@ -121,3 +125,4 @@ plot(dist, cdf, type="l", main="Cumulative Distribution Function Calls", xlab="x
 ```
 
 ![Screenshot](images/example4_part6_d.png)
+
