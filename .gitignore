@@ -1,4 +1,3 @@
-
 *.pyc
 *.DS_Store
 *.exe
@@ -27,9 +26,6 @@ R/Analysis/.DS_Store
 R/.DS_Store
 R/Analysis/.DS_Store
 python/algorithms/.idea/workspace.xml
-python/algorithms/.idea/workspace.xml
-python/algorithms/.idea/workspace.xml
-.DS_Store
-node-angular-mongo-note-news/node_modules/*
-node-angular-mongo-note-news/bin/*
+mean-news/node_modules/*
+mean-news/bin/*
 
