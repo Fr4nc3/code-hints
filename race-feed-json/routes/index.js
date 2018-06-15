@@ -1,7 +1,9 @@
+"use strict";
 var express = require('express');
 var router = express.Router();
 var dal = require('../dataLayer');
-var url = require("url");
+
+var axios = require('axios');
 /* GET home page. */
 router.get('/', function (req, res, next) {
   res.render('index', {
@@ -21,16 +23,17 @@ const apiRaces = (variable, body) => {
   return "h";
 };
 
+
 router.get('/races/:variable*?', function (req, res, next) {
 
-       dal.httpGet(url.parse(URL))
-        // .then(function (res) {
-        //   return dal.loadBody(res);
-        // }).then(function (body) {
-        //    return res;
-        .then(function (res) {
-          res.json("edit");
-        });
+    axios.get(URL).then(function (response) {
+            console.log(typeof response.data);
+             res.json(dal.apiRaces(req.params.variable, response.data));
+    })
+
+      // const response = await axios.get(URL);
+      // console.log(response.data);
+
 
 
 });

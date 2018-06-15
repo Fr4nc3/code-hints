@@ -1,14 +1,22 @@
 var Q = require('q');
 var rp = require('request-promise');
-var http = require('http');
 const apiRaces = (variable, body) => {
-    var deferred = Q.defer();
-console.log("here");
-    let result = {
-        "id": 1
-    };
-    deferred.resolve(result);
-    return deferred.promise;
+
+   var races = variable ? body.races.filter(x => x.race_name === variable) : body.races;
+   return races.map((c, index, body) => {
+       return {
+           race_id: c.race_id,
+           election_date: c.election_date,
+           party: c.party,
+           state_name: c.state_name,
+           total_vote: c.total_vote,
+           percent_in: c.percent_in
+
+       };
+   });
+
+
+
 };
 const apiCandidates = (variable, body) => {
 
@@ -26,27 +34,8 @@ const apiCounties = (variable, body) => {
     };
 };
 
-var loadBody = function (res) {
-    var deferred = Q.defer();
-    var body = "";
-    res.on("data", function (chunk) {
-        body += chunk;
-    });
-    res.on("end", function () {
-        deferred.resolve(body);
-    });
-    return deferred.promise;
-};
-
-const httpGet = function (opts) {
-     var deferred = Q.defer();
-     http.get(opts, deferred.resolve);
-     return deferred.promise;
-};
 module.exports = {
     // export methods here
-    httpGet: httpGet,
     apiRaces: apiRaces,
-    loadBody: loadBody
 
 };
