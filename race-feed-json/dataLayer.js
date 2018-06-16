@@ -1,9 +1,7 @@
-var Q = require('q');
-var rp = require('request-promise');
-const apiRaces = (variable, body) => {
 
+const apiRaces = (variable, body) => {
    var races = variable ? body.races.filter(x => x.race_name === variable) : body.races;
-   return races.map((c, index, body) => {
+   return races.map( c => {
        return {
            race_id: c.race_id,
            election_date: c.election_date,
@@ -14,28 +12,37 @@ const apiRaces = (variable, body) => {
 
        };
    });
-
-
-
 };
 const apiCandidates = (variable, body) => {
+ var races = variable ? body.races.map(x => x.candidates.filter(y => y.candidate_code == parseInt(variable))) : body.races;
+ return races.reduce((acc, val) => acc.concat(val.candidates.map(c => {
+            return {
 
-    var deferred = Q.defer();
-
-    let result = {
-        "id": 1
-    };
-    deferred.resolve(result);
-    return deferred.promise;
+                candidate_code: c.candidate_code,
+                major_party: c.major_party,
+                race_name: val.race_name,
+                vote: c.vote,
+                electoral_vote: c.electoral_vote
+            };
+ })), []);
 };
 const apiCounties = (variable, body) => {
-    return {
-        id: 1
-    };
-};
+    var races = variable ? body.races.map(x => x.counties.filter(y => y.county_name === variable)) : body.races;
+     return races.reduce((acc, val) => acc.concat(val.counties.map(c => {
+         return {
+          county_code: c.county_code,
+          party_stratum_name: c.party_stratum_name,
+          registered: c.registered,
+          total_vote: c.total_vote,
+          fips_code: c.fips_code,
+          race_id: val.race_id
+         };
+     })), []);
 
+};
 module.exports = {
     // export methods here
     apiRaces: apiRaces,
-
+    apiCandidates: apiCandidates,
+    apiCounties: apiCounties
 };
