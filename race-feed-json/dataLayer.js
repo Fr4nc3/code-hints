@@ -14,8 +14,14 @@ const apiRaces = (variable, body) => {
    });
 };
 const apiCandidates = (variable, body) => {
- var races = variable ? body.races.map(x => x.candidates.filter(y => y.candidate_code == parseInt(variable))) : body.races;
- return races.reduce((acc, val) => acc.concat(val.candidates.map(c => {
+ var races = variable ? body.races.map(x => {
+    if (x.candidates.filter(y => y.candidate_code == parseInt(variable))){
+        return x;
+    }
+
+
+ }) : body.races;
+ return races.reduce((acc, val) => acc.concat(val.candidates.filter(y => variable ? y.candidate_code == parseInt(variable) : y.candidate_code).map(c => {
             return {
 
                 candidate_code: c.candidate_code,
@@ -27,17 +33,28 @@ const apiCandidates = (variable, body) => {
  })), []);
 };
 const apiCounties = (variable, body) => {
-    var races = variable ? body.races.map(x => x.counties.filter(y => y.county_name === variable)) : body.races;
-     return races.reduce((acc, val) => acc.concat(val.counties.map(c => {
-         return {
-          county_code: c.county_code,
-          party_stratum_name: c.party_stratum_name,
-          registered: c.registered,
-          total_vote: c.total_vote,
-          fips_code: c.fips_code,
-          race_id: val.race_id
-         };
-     })), []);
+    var races = variable ? body.races.map(x => {
+        if (x.counties.filter(y => y.county_name === variable)){
+            return x;
+        }
+
+       }) : body.races;
+
+    console.log(races);
+     return races.reduce((acc, val) => 
+                acc.concat(val.counties.filter(x => variable ? x.county_name === variable : x.county_name).map(c =>
+                    
+                    
+                    {
+                    return {
+                        county_code: c.county_code,
+                        party_stratum_name: c.party_stratum_name,
+                        registered: c.registered,
+                        total_vote: c.total_vote,
+                        fips_code: c.fips_code,
+                        race_id: val.race_id
+                    };
+                })), []);
 
 };
 module.exports = {
