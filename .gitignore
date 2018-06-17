@@ -1,4 +1,4 @@
-.vscode
+.vscode/*
 *.pyc
 *.DS_Store
 *.exe
@@ -30,5 +30,4 @@ python/algorithms/.idea/workspace.xml
 mean-news/node_modules/*
 mean-news/bin/*
 race-feed-json/node_modules/*
-
 python/algorithms/.idea/workspace.xml
