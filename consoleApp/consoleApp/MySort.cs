@@ -53,22 +53,27 @@ namespace consoleApp
 
 
                     }
-                    else
+                    else if(matrix[i][mid] > v)
                     { 
-                        r = mid;
+                        r = mid-1;
 
+                    }
+                    else if(matrix[i][mid] == v)
+                    {
+                        result.Add(i);
+                        result.Add(l);
+                        return result;
                     }
 
 
                 }
-                if(matrix[i][l]== v){
-                    result.Add(i);
-                    result.Add(l);
-                    return result;
-                }
+
             }
             return result;
 
+
+
+  
 
         }
         static public List<int> FindValue(int[][] matrix, int v)
