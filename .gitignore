@@ -31,3 +31,7 @@ mean-news/node_modules/*
 mean-news/bin/*
 race-feed-json/node_modules/*
 python/algorithms/.idea/workspace.xml
+*.lock
+*.ide
+*.ide-shm
+*.ide-wal
