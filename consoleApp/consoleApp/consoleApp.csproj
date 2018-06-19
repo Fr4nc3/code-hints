@@ -37,6 +37,7 @@
     <Compile Include="Extensions.cs" />
     <Compile Include="Status.cs" />
     <Compile Include="MySort.cs" />
+    <Compile Include="DepthSum.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
