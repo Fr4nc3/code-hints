@@ -66,7 +66,7 @@ app.config([
   }
 ]);
 ```
-![Screenshot](images/sample1.png)
+
 
 ![Screenshot](images/sample2.png)
 
