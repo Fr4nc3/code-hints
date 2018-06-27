@@ -7,8 +7,8 @@ namespace consoleApp
     public class MySort
     {
         public static void Main(string[] args)
-        { 
-        
+        {
+
 
 
 
@@ -29,7 +29,8 @@ namespace consoleApp
            //Code
         } 
         */
-        static public List<int> binarySearch(int[][] matrix, int v){
+        static public List<int> binarySearch(int[][] matrix, int v)
+        {
 
             List<int> result = new List<int>();
             if (matrix.Length == 0)
@@ -53,12 +54,12 @@ namespace consoleApp
 
 
                     }
-                    else if(matrix[i][mid] > v)
-                    { 
-                        r = mid-1;
+                    else if (matrix[i][mid] > v)
+                    {
+                        r = mid - 1;
 
                     }
-                    else if(matrix[i][mid] == v)
+                    else
                     {
                         result.Add(i);
                         result.Add(l);
@@ -73,7 +74,7 @@ namespace consoleApp
 
 
 
-  
+
 
         }
         static public List<int> FindValue(int[][] matrix, int v)
@@ -91,9 +92,9 @@ namespace consoleApp
             //
 
             // n^2
-            for (int i=0; i < xLeng; ++i)
+            for (int i = 0; i < xLeng; ++i)
             {
-                for (int j=0; j < yLeng; ++j)
+                for (int j = 0; j < yLeng; ++j)
                 {
 
                     //if(matrix[i].contains(v))
@@ -113,4 +114,5 @@ namespace consoleApp
             return result;
         }
 
- }
+    } 
+}

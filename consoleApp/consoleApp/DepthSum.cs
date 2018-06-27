@@ -25,9 +25,9 @@ namespace consoleApp
         public int depthSum(List<NestedInteger> input, int level){
             int sum = 0;
             ++level;
-            for(NestedInteger i: input){
+            foreach(NestedInteger i in input){
                 if(i.isInteger()){
-                   sum += (i*level); 
+                   sum += i*level; 
                 }else{
                     sum+= depthSum(i, level);
                 

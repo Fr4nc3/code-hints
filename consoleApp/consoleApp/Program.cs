@@ -35,15 +35,14 @@ namespace consoleApp
             int rev = 0;
             while (left > 0)
             {
-                int r = left % 10;
+                int r = left % 10; 
                 Console.WriteLine("r: "+r);
                 rev = rev * 10 + r;
                 left = left / 10;  //left = Math.floor(left / 10); 
                 Console.WriteLine("left: "+left);
             }
             var list = "hello this is nyc".Split(' ').AsEnumerable();
-            list.OrderByDescending(x => x.Length).ToList()
-                .ForEach(s => Console.WriteLine(s+ " "+s.Length));
+            list.OrderByDescending(x => x.Length).ToList().ForEach(s => Console.WriteLine(s+ " "+s.Length));
             //Console.WriteLine();
 
             Console.WriteLine(rev);
