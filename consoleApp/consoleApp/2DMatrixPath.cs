@@ -15,27 +15,13 @@ namespace consoleApp
             for (int i = 1; i < 5; i++)
                 if (arr[0, i] != -1)
                     arr[0, i] = arr[0, i - 1];
-            
-            for (int k = 0; k < 5; ++k){
-                for (int t = 0; t < 5; ++t)
-                { 
-                    Console.Write(arr[k,t]);
-                }
-                Console.WriteLine("");
-            }
-            Console.WriteLine("change");
+
+            printArr(arr);
             for (int j = 1; j < 5; j++)
                 if (arr[j, 0] != -1)
                     arr[j, 0] = arr[j - 1, 0];
 
-            for (int k = 0; k < 5; ++k)
-            {
-                for (int t = 0; t < 5; ++t)
-                {
-                    Console.Write(arr[k, t]);
-                }
-                Console.WriteLine("");
-            }
+            printArr(arr);
             // Mark reachable nodes in
             // remaining matrix.
             for (int i = 1; i < 5; i++)
@@ -43,7 +29,15 @@ namespace consoleApp
                     if (arr[i, j] != -1)
                         arr[i, j] = Math.Max(arr[i, j - 1],
                                             arr[i - 1, j]);
-            Console.WriteLine("change");
+            
+            printArr(arr);
+            // return yes if right 
+            // bottom index is 1
+            return (arr[5 - 1, 5 - 1] == 1);
+        }
+
+        public static void printArr(int[,] arr){
+            Console.WriteLine("print: ");
             for (int k = 0; k < 5; ++k)
             {
                 for (int t = 0; t < 5; ++t)
@@ -52,11 +46,8 @@ namespace consoleApp
                 }
                 Console.WriteLine("");
             }
-            // return yes if right 
-            // bottom index is 1
-            return (arr[5 - 1, 5 - 1] == 1);
+            Console.WriteLine("\n\n");
         }
-
         //Driver code 
         public static void Main()
         {
