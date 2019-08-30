@@ -1,4 +1,4 @@
-## DATA MINING: NASA KEPLER EXOPLONETS with R
+## DATA MINING: NASA KEPLER EXOPLANETS with R
 
 ![Screenshot](images/exo_title.png)
 
