@@ -13,7 +13,7 @@
     "ejs": "~2.5.7",
     "express": "^4.16.3",
     "morgan": "~1.9.0",
-    "nodemon": "^1.17.5",
+    "nodemon": "^3.0.1",
     "serve-favicon": "~2.4.5"
   }
 }
